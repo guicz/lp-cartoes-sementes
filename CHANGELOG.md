@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.19
+
+- **Change Type:** Fix
+- **Description:** Centralização do rodapé com logo oficial, dados da Sicredi Sementes do Sul e disclaimer sem caixa visual.
+- **Rationale:** Atender ao ajuste de hierarquia solicitado, reduzindo peso visual no rodapé e mantendo dados institucionais rastreáveis.
+- **Tech Debt:** CNPJ da cooperativa não foi inserido porque a fonte oficial consultada listou endereço, telefone e nº da cooperativa, mas não o CNPJ da cooperativa no cadastro público do Sicredi.
+
 ## v1.18
 
 - **Change Type:** Docs
