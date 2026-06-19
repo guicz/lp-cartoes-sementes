@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.3
+
+- **Change Type:** Fix
+- **Description:** Ajuste do workflow para `pnpm@10.15.1`, compatível com Node.js 20 LTS no GitHub Actions.
+- **Rationale:** Corrigir falha de deploy causada por incompatibilidade entre `pnpm@11` e Node 20.
+- **Tech Debt:** Reavaliar upgrade para Node 22/24 e pnpm 11 somente quando o stack padrão do projeto mudar.
+
 ## v1.2
 
 - **Change Type:** Config
