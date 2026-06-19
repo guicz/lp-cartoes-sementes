@@ -18,10 +18,10 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Legenda translúcida do hero posicionada em área reservada, sem cobrir os cartões.
 - Benefícios principais do hero com ícones oficiais Sicredi e microcards.
 - Seção de benefícios com fundo branco/verde e cards com acentos de marca.
-- Seção de cartões com superfícies de imagem claras em branco/verde, sem bloco cinza opaco.
+- Seção de cartões com imagens em halos suaves, sem molduras retangulares atrás dos cartões.
 
 - Seções de cartões participantes e como pedir com camadas translúcidas, catavento de fundo animado no scroll e ícones oficiais nos passos.
-- Vitrine de cartões participantes em composição assimétrica, com Black em destaque e Platinum/Gold em peças laterais translúcidas.
+- Vitrine de cartões participantes em fundo claro, com texto escuro legível e composição assimétrica Black/Platinum/Gold.
 
 - Rodapé centralizado com logo oficial, dados da Sicredi Sementes do Sul e disclaimer sem caixa visual.
 

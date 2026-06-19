@@ -32,7 +32,7 @@ const portfolioCards = [
 
 export function PortfolioBand() {
   return (
-    <section className="portfolio-band relative overflow-hidden py-16 text-white md:py-24">
+    <section className="portfolio-band relative overflow-hidden py-16 text-sicredi-text md:py-24">
       <img
         src={assetUrl('/assets/logos/sicredi-logo.svg')}
         alt=""
@@ -41,13 +41,13 @@ export function PortfolioBand() {
       />
       <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-5 md:grid-cols-[0.78fr_1.22fr] md:px-8">
         <div className="portfolio-copy">
-          <p className="font-heading text-sm font-bold uppercase tracking-normal text-white/78">
+          <p className="font-heading text-sm font-bold uppercase tracking-normal text-sicredi-green">
             Cartões participantes
           </p>
-          <h2 className="mt-3 font-heading text-4xl font-bold italic leading-tight md:text-5xl">
+          <h2 className="mt-3 font-heading text-4xl font-bold italic leading-tight text-sicredi-text md:text-5xl">
             Benefícios para comprar, pontuar e aproveitar melhor.
           </h2>
-          <p className="mt-5 max-w-xl text-lg leading-8 text-white/82">
+          <p className="mt-5 max-w-xl text-lg leading-8 text-sicredi-muted">
             Os cartões Sicredi participantes acumulam pontos que podem ser trocados por produtos,
             viagens ou transferidos para programas parceiros, conforme regras de cada cartão.
           </p>

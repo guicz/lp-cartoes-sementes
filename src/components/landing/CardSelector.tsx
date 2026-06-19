@@ -56,10 +56,11 @@ export function CardSelector() {
           {visibleCards.map((card) => (
             <article
               key={card.id}
-              className="sicredi-box flex min-h-[560px] flex-col border border-sicredi-soft bg-white p-5 shadow-sm"
+              className="product-card sicredi-box flex min-h-[560px] flex-col p-5"
             >
-              <div className="sicredi-box card-image-surface flex min-h-44 items-center justify-center p-4">
-                <img src={card.image} alt={card.imageAlt} className="max-h-40 w-auto object-contain" />
+              <div className={cn('product-card-stage', `product-card-stage--${card.tier}`)}>
+                <span className="product-card-stage__halo" />
+                <img src={card.image} alt={card.imageAlt} className="product-card-stage__image" />
               </div>
               <div className="flex flex-1 flex-col pt-6">
                 <h3 className="font-heading text-2xl font-bold text-sicredi-text">{card.name}</h3>

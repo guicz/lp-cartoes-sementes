@@ -215,21 +215,119 @@ select:focus-visible {
   transform: translateY(-3px);
 }
 
-.card-image-surface {
+.product-card {
+  position: relative;
+  overflow: hidden;
   border: 1px solid rgba(215, 230, 200, 0.78);
   background:
-    radial-gradient(circle at 20% 12%, rgba(215, 230, 200, 0.76), transparent 28%),
-    linear-gradient(180deg, #ffffff 0%, rgba(215, 230, 200, 0.24) 100%);
+    linear-gradient(180deg, #ffffff 0%, rgba(250, 253, 248, 0.96) 100%),
+    radial-gradient(circle at 16% 0%, rgba(215, 230, 200, 0.42), transparent 30%);
+  box-shadow: 0 18px 44px rgba(20, 110, 55, 0.08);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, #3fa110, rgba(63, 161, 16, 0.12));
+}
+
+.product-card:hover {
+  border-color: rgba(63, 161, 16, 0.48);
+  box-shadow: 0 24px 60px rgba(20, 110, 55, 0.13);
+  transform: translateY(-3px);
+}
+
+.product-card-stage {
+  position: relative;
+  display: flex;
+  min-height: 190px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.product-card-stage::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  z-index: -1;
+  width: min(82%, 270px);
+  height: 110px;
+  border-radius: 999px;
+  background: rgba(215, 230, 200, 0.52);
+  filter: blur(18px);
+  transform: translate(-50%, -50%);
+}
+
+.product-card-stage::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  z-index: -1;
+  width: min(64%, 220px);
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(50, 60, 50, 0.16);
+  filter: blur(8px);
+  transform: translateX(-50%);
+}
+
+.product-card-stage--premium::before {
+  background: linear-gradient(90deg, rgba(20, 110, 55, 0.18), rgba(215, 230, 200, 0.58));
+}
+
+.product-card-stage--equilibrio::before {
+  background: linear-gradient(90deg, rgba(215, 230, 200, 0.72), rgba(255, 255, 255, 0.86));
+}
+
+.product-card-stage--rotina::before {
+  background: linear-gradient(90deg, rgba(255, 205, 0, 0.26), rgba(215, 230, 200, 0.56));
+}
+
+.product-card-stage__halo {
+  position: absolute;
+  inset: 22px 10% auto;
+  height: 88px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.88), transparent 70%);
+  filter: blur(12px);
+}
+
+.product-card-stage__image {
+  position: relative;
+  z-index: 1;
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 20px rgba(50, 60, 50, 0.2));
 }
 
 .portfolio-band {
   background:
-    radial-gradient(circle at 16% 22%, rgba(215, 230, 200, 0.28), transparent 24%),
-    radial-gradient(circle at 84% 70%, rgba(63, 161, 16, 0.28), transparent 30%),
-    linear-gradient(135deg, #0a3d21 0%, #146e37 46%, #082c18 100%);
+    radial-gradient(circle at 8% 8%, rgba(215, 230, 200, 0.72), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(63, 161, 16, 0.12), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #f6faf3 100%);
 }
 
-.portfolio-band::before,
+.portfolio-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.78), transparent 36%),
+    radial-gradient(circle at 78% 72%, rgba(20, 110, 55, 0.08), transparent 34%);
+}
+
 .request-section::before {
   content: '';
   position: absolute;
@@ -258,7 +356,7 @@ select:focus-visible {
   top: 0.4rem;
   width: 4px;
   height: 78%;
-  background: linear-gradient(180deg, #d7e6c8, rgba(215, 230, 200, 0.08));
+  background: linear-gradient(180deg, #3fa110, rgba(63, 161, 16, 0.08));
   border-radius: 999px;
 }
 
@@ -273,10 +371,11 @@ select:focus-visible {
 .portfolio-showcase::before {
   content: '';
   position: absolute;
-  inset: 9% 8% 10% 4%;
-  border: 1px solid rgba(215, 230, 200, 0.24);
-  border-radius: 0 34px 34px;
-  transform: rotate(-4deg);
+  inset: 12% 4% 6% 5%;
+  border: 1px solid rgba(63, 161, 16, 0.14);
+  border-radius: 0 44px 44px;
+  background: rgba(255, 255, 255, 0.44);
+  transform: rotate(-2deg);
   pointer-events: none;
 }
 
@@ -284,13 +383,12 @@ select:focus-visible {
   position: relative;
   min-height: 222px;
   overflow: hidden;
-  border: 1px solid rgba(215, 230, 200, 0.3);
-  border-radius: 0 22px 22px;
+  border: 1px solid rgba(215, 230, 200, 0.8);
+  border-radius: 0 24px 24px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.04)),
-    rgba(20, 110, 55, 0.28);
-  box-shadow: 0 22px 62px rgba(5, 36, 21, 0.24);
-  backdrop-filter: blur(16px);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 251, 244, 0.96)),
+    radial-gradient(circle at 18% 0%, rgba(215, 230, 200, 0.45), transparent 28%);
+  box-shadow: 0 22px 62px rgba(20, 110, 55, 0.1);
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -301,15 +399,7 @@ select:focus-visible {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(112deg, rgba(255, 255, 255, 0.18), transparent 31%),
-    repeating-linear-gradient(
-      135deg,
-      rgba(215, 230, 200, 0.06) 0,
-      rgba(215, 230, 200, 0.06) 1px,
-      transparent 1px,
-      transparent 18px
-    );
+  background: linear-gradient(112deg, rgba(63, 161, 16, 0.08), transparent 34%);
   pointer-events: none;
 }
 
@@ -320,14 +410,14 @@ select:focus-visible {
   bottom: -44px;
   width: 132px;
   height: 132px;
-  border: 1px solid rgba(215, 230, 200, 0.18);
+  border: 1px solid rgba(63, 161, 16, 0.12);
   border-radius: 0 44px 44px;
   transform: rotate(12deg);
 }
 
 .portfolio-ticket:hover {
-  border-color: rgba(215, 230, 200, 0.72);
-  box-shadow: 0 30px 80px rgba(5, 36, 21, 0.34);
+  border-color: rgba(63, 161, 16, 0.48);
+  box-shadow: 0 30px 80px rgba(20, 110, 55, 0.16);
   transform: translateY(-4px);
 }
 
@@ -335,20 +425,20 @@ select:focus-visible {
   grid-row: span 2;
   min-height: 460px;
   background:
-    radial-gradient(circle at 20% 20%, rgba(215, 230, 200, 0.28), transparent 28%),
-    linear-gradient(145deg, rgba(3, 16, 11, 0.9), rgba(20, 110, 55, 0.46));
+    radial-gradient(circle at 28% 18%, rgba(215, 230, 200, 0.72), transparent 30%),
+    linear-gradient(180deg, #ffffff, #f4faf0);
 }
 
 .portfolio-ticket--platinum {
   background:
-    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.42), transparent 31%),
-    linear-gradient(135deg, rgba(215, 230, 200, 0.22), rgba(20, 110, 55, 0.26));
+    radial-gradient(circle at 16% 18%, rgba(215, 230, 200, 0.8), transparent 34%),
+    linear-gradient(180deg, #ffffff, #f7fbf5);
 }
 
 .portfolio-ticket--gold {
   background:
-    radial-gradient(circle at 82% 18%, rgba(255, 205, 0, 0.28), transparent 28%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(20, 110, 55, 0.32));
+    radial-gradient(circle at 82% 18%, rgba(255, 205, 0, 0.28), transparent 30%),
+    linear-gradient(180deg, #ffffff, #f8fbf4);
 }
 
 .portfolio-ticket__number {
@@ -359,17 +449,17 @@ select:focus-visible {
   font-family: 'Exo 2', Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(20, 110, 55, 0.62);
 }
 
 .portfolio-ticket__visual {
   position: relative;
   z-index: 1;
-  min-height: 128px;
+  min-height: 168px;
 }
 
 .portfolio-ticket--black .portfolio-ticket__visual {
-  min-height: 278px;
+  min-height: 360px;
 }
 
 .portfolio-ticket__glow {
@@ -384,23 +474,24 @@ select:focus-visible {
 .portfolio-ticket__image {
   position: absolute;
   left: 50%;
-  top: 28px;
-  width: min(74%, 250px);
+  top: 26px;
+  width: min(66%, 220px);
   height: auto;
-  max-height: 190px;
+  max-height: 140px;
   object-fit: contain;
   filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.3));
   transform: translateX(-50%) rotate(-2deg);
 }
 
 .portfolio-ticket--black .portfolio-ticket__image {
-  top: 42px;
-  width: min(60%, 250px);
-  max-height: 260px;
+  top: 54px;
+  width: min(68%, 290px);
+  max-height: 310px;
   transform: translateX(-50%) rotate(-5deg);
 }
 
 .portfolio-ticket--gold .portfolio-ticket__image {
+  width: min(72%, 235px);
   transform: translateX(-50%) rotate(3deg);
 }
 
@@ -414,7 +505,7 @@ select:focus-visible {
   font-size: 0.82rem;
   font-weight: 900;
   letter-spacing: 0;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(20, 110, 55, 0.72);
   text-transform: uppercase;
 }
 
@@ -425,19 +516,19 @@ select:focus-visible {
   font-style: italic;
   font-weight: 800;
   line-height: 1.08;
-  color: #ffffff;
+  color: #323c32;
 }
 
 .portfolio-ticket__points {
   margin-top: 1rem;
-  color: #d7e6c8;
+  color: #006b2d;
   font-weight: 900;
 }
 
 .portfolio-ticket__detail {
   margin-top: 0.45rem;
   max-width: 22rem;
-  color: rgba(255, 255, 255, 0.78);
+  color: #5a645a;
   font-size: 0.92rem;
   line-height: 1.5;
 }
@@ -484,6 +575,8 @@ select:focus-visible {
 .portfolio-pinwheel {
   right: -8%;
   top: -18%;
+  opacity: 0.12;
+  mix-blend-mode: multiply;
 }
 
 .request-pinwheel {
@@ -515,14 +608,14 @@ select:focus-visible {
 
   .portfolio-ticket__visual,
   .portfolio-ticket--black .portfolio-ticket__visual {
-    min-height: 190px;
+    min-height: 210px;
   }
 
   .portfolio-ticket__image,
   .portfolio-ticket--black .portfolio-ticket__image {
-    top: 34px;
+    top: 30px;
     width: min(72%, 230px);
-    max-height: 170px;
+    max-height: 155px;
   }
 
   .portfolio-ticket__copy {

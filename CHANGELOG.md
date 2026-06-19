@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.21
+
+- **Change Type:** Fix
+- **Description:** Revisão das seções de comparação e cartões participantes, removendo fundos retangulares atrás dos cartões e trocando a vitrine verde poluída por composição clara com texto escuro.
+- **Rationale:** Corrigir problemas visuais apontados em screenshots: fundos quadrados nos cartões, baixa legibilidade e excesso de textura competindo com o conteúdo.
+- **Tech Debt:** A solução mantém CSS customizado para halos e vitrine; validar novamente se as imagens dos cartões forem substituídas.
+
 ## v1.20
 
 - **Change Type:** Feature
