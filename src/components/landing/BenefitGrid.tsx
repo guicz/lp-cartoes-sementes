@@ -10,18 +10,8 @@ export function BenefitGrid() {
           <h2 className="mt-3 font-heading text-4xl font-bold italic leading-tight text-sicredi-text md:text-5xl">
             Use do seu jeito, com benefícios para a rotina.
           </h2>
-          <div className="mt-6 flex flex-wrap gap-3">
-            {['Dia a dia', 'Compras online', 'Viagens e pontos'].map((item) => (
-              <span
-                key={item}
-                className="sicredi-box border border-sicredi-soft bg-white/86 px-4 py-2 text-sm font-extrabold text-sicredi-dark shadow-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit, index) => (
             <article
               key={benefit.title}

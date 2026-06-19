@@ -58,7 +58,7 @@ export function CardSelector() {
               key={card.id}
               className="sicredi-box flex min-h-[560px] flex-col border border-sicredi-soft bg-white p-5 shadow-sm"
             >
-              <div className="flex min-h-44 items-center justify-center bg-sicredi-surface p-4">
+              <div className="sicredi-box card-image-surface flex min-h-44 items-center justify-center p-4">
                 <img src={card.image} alt={card.imageAlt} className="max-h-40 w-auto object-contain" />
               </div>
               <div className="flex flex-1 flex-col pt-6">

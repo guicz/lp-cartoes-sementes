@@ -17,7 +17,8 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Hero visual inspirado na arte de referência, recriado sem cartões descontinuados.
 - Legenda translúcida do hero posicionada em área reservada, sem cobrir os cartões.
 - Benefícios principais do hero com ícones oficiais Sicredi e microcards.
-- Seção de benefícios com fundo branco/verde, marcadores leves e cards com acentos de marca.
+- Seção de benefícios com fundo branco/verde e cards com acentos de marca.
+- Seção de cartões com superfícies de imagem claras em branco/verde, sem bloco cinza opaco.
 
 ## Tech Stack
 

@@ -214,3 +214,10 @@ select:focus-visible {
   box-shadow: 0 18px 48px rgba(20, 110, 55, 0.14);
   transform: translateY(-3px);
 }
+
+.card-image-surface {
+  border: 1px solid rgba(215, 230, 200, 0.78);
+  background:
+    radial-gradient(circle at 20% 12%, rgba(215, 230, 200, 0.76), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, rgba(215, 230, 200, 0.24) 100%);
+}

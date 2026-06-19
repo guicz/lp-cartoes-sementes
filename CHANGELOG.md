@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.16
+
+- **Change Type:** Fix
+- **Description:** Remoção das tags da seção de benefícios e troca do fundo cinza das imagens dos cartões por superfície branca/verde suave.
+- **Rationale:** Reduzir elementos redundantes e eliminar aparência opaca na seção de cartões mantendo a identidade Sicredi.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.15
 
 - **Change Type:** Fix
