@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.2
+
+- **Change Type:** Config
+- **Description:** Configuração de deploy automático no GitHub Pages com workflow de GitHub Actions e `base` condicional do Vite.
+- **Rationale:** Permitir execução pública da LP direto no repositório GitHub sem alterar o comportamento local de desenvolvimento.
+- **Tech Debt:** O GitHub Pages precisa estar habilitado para GitHub Actions nas configurações do repositório caso a primeira execução falhe por política do repo.
+
 ## v1.1
 
 - **Change Type:** Fix

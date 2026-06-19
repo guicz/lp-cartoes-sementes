@@ -38,7 +38,15 @@ pnpm preview
 
 ## Deployment
 
-A LP atual é estática e não usa backend. Para publicar em Firebase Hosting:
+A LP atual é estática e não usa backend. O deploy principal está configurado por GitHub Actions para GitHub Pages:
+
+```bash
+git push origin main
+```
+
+URL esperada após o workflow: `https://guicz.github.io/lp-cartoes-sementes/`.
+
+Para publicar em Firebase Hosting futuramente, criar `firebase.json` e rodar:
 
 ```bash
 gcloud auth login
