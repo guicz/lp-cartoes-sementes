@@ -159,3 +159,64 @@ select:focus-visible {
   box-shadow: 0 14px 36px rgba(20, 110, 55, 0.1);
   transform: translateY(-2px);
 }
+
+.benefits-section {
+  background:
+    linear-gradient(180deg, #ffffff 0%, rgba(215, 230, 200, 0.3) 44%, #ffffff 100%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(63, 161, 16, 0.06) 0,
+      rgba(63, 161, 16, 0.06) 1px,
+      transparent 1px,
+      transparent 22px
+    );
+}
+
+.benefit-summary {
+  background:
+    linear-gradient(135deg, rgba(63, 161, 16, 0.28), transparent 42%),
+    linear-gradient(135deg, #146e37, #0b4524);
+}
+
+.benefit-card {
+  min-height: 238px;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, #3fa110, rgba(63, 161, 16, 0.18));
+}
+
+.benefit-card::after {
+  content: '';
+  position: absolute;
+  right: -44px;
+  bottom: -44px;
+  width: 92px;
+  height: 92px;
+  border: 1px solid rgba(63, 161, 16, 0.18);
+  border-radius: 0 36px 36px;
+  transform: rotate(12deg);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.benefit-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.benefit-card:hover {
+  border-color: rgba(63, 161, 16, 0.62);
+  background: linear-gradient(180deg, #ffffff, rgba(215, 230, 200, 0.32));
+  box-shadow: 0 18px 48px rgba(20, 110, 55, 0.14);
+  transform: translateY(-3px);
+}

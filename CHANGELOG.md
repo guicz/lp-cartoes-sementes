@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.14
+
+- **Change Type:** Feature
+- **Description:** Redesenho da seção de benefícios com fundo branco/verde suave, chamada lateral em verde e cards com acentos visuais Sicredi.
+- **Rationale:** Reduzir a sensação cinza e fria da seção mantendo ícones oficiais, contraste e hierarquia.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.13
 
 - **Change Type:** Fix
