@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.17
+
+- **Change Type:** Feature
+- **Description:** Redesenho das seções de cartões participantes e como pedir com camadas translúcidas, catavento de fundo com animação no scroll e ícones oficiais nos passos.
+- **Rationale:** Remover verde chapado e fundos cinza simples, elevando a hierarquia visual sem sair do sistema Sicredi.
+- **Tech Debt:** O catavento animado usa o SVG local existente como grafismo decorativo; manter validação de marca se houver revisão formal do manual.
+
 ## v1.16
 
 - **Change Type:** Fix

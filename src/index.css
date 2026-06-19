@@ -221,3 +221,107 @@ select:focus-visible {
     radial-gradient(circle at 20% 12%, rgba(215, 230, 200, 0.76), transparent 28%),
     linear-gradient(180deg, #ffffff 0%, rgba(215, 230, 200, 0.24) 100%);
 }
+
+.portfolio-band {
+  background:
+    radial-gradient(circle at 16% 22%, rgba(215, 230, 200, 0.28), transparent 24%),
+    radial-gradient(circle at 84% 70%, rgba(63, 161, 16, 0.28), transparent 30%),
+    linear-gradient(135deg, #0a3d21 0%, #146e37 46%, #082c18 100%);
+}
+
+.portfolio-band::before,
+.request-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.16), transparent 30%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(215, 230, 200, 0.08) 0,
+      rgba(215, 230, 200, 0.08) 1px,
+      transparent 1px,
+      transparent 24px
+    );
+}
+
+.portfolio-copy,
+.portfolio-card,
+.request-hero,
+.request-step-card {
+  border: 1px solid rgba(215, 230, 200, 0.54);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 72px rgba(5, 36, 21, 0.18);
+  backdrop-filter: blur(14px);
+}
+
+.portfolio-card {
+  background: rgba(255, 255, 255, 0.92);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 18px 48px rgba(5, 36, 21, 0.22);
+  transform: translateY(-3px);
+}
+
+.request-section {
+  background:
+    radial-gradient(circle at 12% 16%, rgba(215, 230, 200, 0.64), transparent 22%),
+    radial-gradient(circle at 88% 36%, rgba(63, 161, 16, 0.14), transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, rgba(215, 230, 200, 0.22) 100%);
+}
+
+.request-hero {
+  background:
+    radial-gradient(circle at 16% 10%, rgba(255, 255, 255, 0.2), transparent 34%),
+    linear-gradient(135deg, rgba(63, 161, 16, 0.78), rgba(20, 110, 55, 0.74)),
+    rgba(20, 110, 55, 0.52);
+}
+
+.request-step-card {
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 14px 42px rgba(20, 110, 55, 0.1);
+}
+
+.pinwheel-scroll {
+  position: absolute;
+  z-index: 0;
+  width: clamp(260px, 32vw, 520px);
+  height: auto;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: pinwheel-scroll-spin linear both;
+  animation-timeline: view();
+  animation-range: entry -10% exit 110%;
+}
+
+.portfolio-pinwheel {
+  right: -8%;
+  top: -18%;
+}
+
+.request-pinwheel {
+  left: -9%;
+  bottom: -28%;
+  mix-blend-mode: multiply;
+}
+
+@keyframes pinwheel-scroll-spin {
+  from {
+    transform: rotate(-24deg) scale(0.92);
+  }
+
+  to {
+    transform: rotate(156deg) scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pinwheel-scroll {
+    animation: none;
+  }
+}

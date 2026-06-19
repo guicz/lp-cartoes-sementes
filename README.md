@@ -20,6 +20,8 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Seção de benefícios com fundo branco/verde e cards com acentos de marca.
 - Seção de cartões com superfícies de imagem claras em branco/verde, sem bloco cinza opaco.
 
+- Seções de cartões participantes e como pedir com camadas translúcidas, catavento de fundo animado no scroll e ícones oficiais nos passos.
+
 ## Tech Stack
 
 - Vite + React + TypeScript.
