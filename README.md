@@ -15,6 +15,7 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Remoção de cartões verdes/internacional das composições visuais.
 - Grid de cartões centralizado para a linha atual Black, Platinum e Gold.
 - Hero visual inspirado na arte de referência, recriado sem cartões descontinuados.
+- Legenda translúcida do hero posicionada em área reservada, sem cobrir os cartões.
 - Benefícios principais do hero com ícones oficiais Sicredi e microcards.
 
 ## Tech Stack

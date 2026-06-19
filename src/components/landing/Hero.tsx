@@ -23,19 +23,19 @@ const heroCards = [
     src: assetUrl('/assets/cards/black.webp'),
     alt: 'Cartão Sicredi Mastercard Black',
     className:
-      'left-[7%] top-[12%] h-52 -rotate-6 md:left-[9%] md:top-[10%] md:h-72 hero-card-shadow',
+      'left-[7%] top-[7%] h-44 -rotate-6 md:left-[9%] md:top-[8%] md:h-72 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/platinum.webp'),
     alt: 'Cartão Sicredi Platinum',
     className:
-      'left-[50%] bottom-[17%] h-32 -rotate-2 md:left-[42%] md:bottom-[15%] md:h-48 hero-card-shadow',
+      'left-[34%] top-[32%] h-24 -rotate-2 md:left-[38%] md:top-[36%] md:h-44 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/gold.webp'),
     alt: 'Cartão Sicredi Gold',
     className:
-      'right-[3%] top-[32%] h-32 rotate-6 md:right-[5%] md:top-[33%] md:h-48 hero-card-shadow',
+      'right-[4%] top-[23%] h-28 rotate-6 md:right-[5%] md:top-[25%] md:h-48 hero-card-shadow',
   },
 ];
 
@@ -85,7 +85,7 @@ export function Hero() {
         </div>
         <div className="relative">
           <div className="absolute -right-16 top-8 h-72 w-72 rounded-full bg-sicredi-soft blur-3xl" />
-          <div className="sicredi-box hero-stage relative min-h-[390px] overflow-hidden p-5 shadow-soft md:min-h-[520px] md:p-8">
+          <div className="sicredi-box hero-stage relative min-h-[420px] overflow-hidden p-5 shadow-soft md:min-h-[540px] md:p-8">
             <div className="hero-stage__beam hero-stage__beam--top" />
             <div className="hero-stage__beam hero-stage__beam--base" />
             <div className="hero-stage__outline" />
@@ -99,7 +99,7 @@ export function Hero() {
                 className={`absolute z-20 w-auto object-contain ${card.className}`}
               />
             ))}
-            <div className="sicredi-box hero-stage__caption absolute bottom-5 left-5 z-30 max-w-36 bg-white/12 p-4 text-white backdrop-blur-md md:bottom-7 md:left-7 md:max-w-56 md:p-5">
+            <div className="sicredi-box hero-stage__caption absolute inset-x-5 bottom-5 z-30 bg-white/12 p-4 text-white backdrop-blur-md md:inset-x-7 md:bottom-7 md:p-5">
               <p className="font-heading text-2xl font-bold italic leading-tight md:text-3xl">
                 Black, Platinum e Gold
               </p>

@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.12
+
+- **Change Type:** Fix
+- **Description:** Reserva de faixa inferior no hero para manter a legenda translúcida fora da área dos cartões Black, Platinum e Gold.
+- **Rationale:** Corrigir a sobreposição visual em breakpoints reais sem remover o efeito translúcido aprovado.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.11
 
 - **Change Type:** Fix
