@@ -4,17 +4,29 @@ const portfolioCards = [
   {
     src: assetUrl('/assets/cards/black.webp'),
     alt: 'Cartão Sicredi Mastercard Black',
+    name: 'Mastercard Black™',
     label: 'Experiências e viagens',
+    points: 'Até 2,5 pontos por dólar',
+    detail: 'Salas VIP, experiências selecionadas e benefícios para viajar.',
+    tone: 'black',
   },
   {
     src: assetUrl('/assets/cards/platinum.webp'),
     alt: 'Cartão Sicredi Platinum',
+    name: 'Platinum',
     label: 'Equilíbrio entre rotina e proteção',
+    points: '1,5 ponto por dólar',
+    detail: 'Versatilidade para compras, planejamento e viagens.',
+    tone: 'platinum',
   },
   {
     src: assetUrl('/assets/cards/gold.webp'),
     alt: 'Cartão Sicredi Gold',
+    name: 'Gold',
     label: 'Compras do dia a dia',
+    points: '1 ponto por dólar',
+    detail: 'Praticidade, compras protegidas e benefícios essenciais.',
+    tone: 'gold',
   },
 ];
 
@@ -27,8 +39,8 @@ export function PortfolioBand() {
         aria-hidden="true"
         className="pinwheel-scroll portfolio-pinwheel"
       />
-      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-8 px-5 md:grid-cols-[0.9fr_1.1fr] md:px-8">
-        <div className="sicredi-box portfolio-copy p-6 md:p-8">
+      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-5 md:grid-cols-[0.78fr_1.22fr] md:px-8">
+        <div className="portfolio-copy">
           <p className="font-heading text-sm font-bold uppercase tracking-normal text-white/78">
             Cartões participantes
           </p>
@@ -40,13 +52,24 @@ export function PortfolioBand() {
             viagens ou transferidos para programas parceiros, conforme regras de cada cartão.
           </p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-3">
-          {portfolioCards.map((card) => (
-            <article key={card.src} className="sicredi-box portfolio-card p-5 text-sicredi-text">
-              <div className="sicredi-box card-image-surface flex h-40 items-center justify-center p-4">
-                <img src={card.src} alt={card.alt} className="max-h-32 w-auto object-contain" />
+        <div className="portfolio-showcase" aria-label="Cartões Sicredi participantes">
+          {portfolioCards.map((card, index) => (
+            <article
+              key={card.src}
+              className={`portfolio-ticket portfolio-ticket--${card.tone}`}
+            >
+              <span className="portfolio-ticket__number">0{index + 1}</span>
+              <div className="portfolio-ticket__visual" aria-hidden="true">
+                <span className="portfolio-ticket__glow" />
+                <img src={card.src} alt="" className="portfolio-ticket__image" />
               </div>
-              <p className="mt-4 text-sm font-extrabold leading-5">{card.label}</p>
+              <div className="portfolio-ticket__copy">
+                <p className="portfolio-ticket__name">{card.name}</p>
+                <h3>{card.label}</h3>
+                <p className="portfolio-ticket__points">{card.points}</p>
+                <p className="portfolio-ticket__detail">{card.detail}</p>
+              </div>
+              <img src={card.src} alt={card.alt} className="sr-only" />
             </article>
           ))}
         </div>

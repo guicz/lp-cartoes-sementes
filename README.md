@@ -21,6 +21,7 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Seção de cartões com superfícies de imagem claras em branco/verde, sem bloco cinza opaco.
 
 - Seções de cartões participantes e como pedir com camadas translúcidas, catavento de fundo animado no scroll e ícones oficiais nos passos.
+- Vitrine de cartões participantes em composição assimétrica, com Black em destaque e Platinum/Gold em peças laterais translúcidas.
 
 - Rodapé centralizado com logo oficial, dados da Sicredi Sementes do Sul e disclaimer sem caixa visual.
 

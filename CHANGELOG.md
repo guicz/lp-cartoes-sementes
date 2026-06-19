@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.20
+
+- **Change Type:** Feature
+- **Description:** Redesenho da vitrine de cartões participantes com composição assimétrica, Black em destaque e Platinum/Gold em peças laterais translúcidas.
+- **Rationale:** Substituir cards brancos simples por uma solução visual mais editorial e alinhada à presença de marca Sicredi, mantendo legibilidade e assets oficiais.
+- **Tech Debt:** A seção usa CSS customizado mais específico; manter validação visual em desktop/mobile ao alterar imagens ou textos dos cartões.
+
 ## v1.19
 
 - **Change Type:** Fix
