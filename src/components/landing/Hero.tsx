@@ -1,3 +1,5 @@
+import { assetUrl } from '@/lib/assets';
+
 export function Hero() {
   return (
     <section id="inicio" className="overflow-hidden bg-white">
@@ -37,7 +39,7 @@ export function Hero() {
           <div className="absolute -right-16 top-8 h-72 w-72 rounded-full bg-sicredi-soft blur-3xl" />
           <div className="sicredi-box relative bg-sicredi-green p-5 shadow-soft md:p-8">
             <img
-              src="/assets/cards/hero-cartoes.webp"
+              src={assetUrl('/assets/cards/hero-cartoes.webp')}
               alt="Cartões Sicredi coloridos para pessoa física"
               className="mx-auto w-full max-w-xl"
             />

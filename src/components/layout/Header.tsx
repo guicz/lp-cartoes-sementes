@@ -1,3 +1,5 @@
+import { assetUrl } from '@/lib/assets';
+
 const navItems = [
   { label: 'Benefícios', href: '#beneficios' },
   { label: 'Cartões', href: '#cartoes' },
@@ -10,7 +12,7 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 md:px-8">
         <a href="#inicio" aria-label="Voltar ao início">
           <img
-            src="/assets/logos/sicredi-logo-full.png"
+            src={assetUrl('/assets/logos/sicredi-logo-full.png')}
             alt="Sicredi"
             className="h-12 w-auto sm:h-14"
           />

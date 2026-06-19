@@ -1,10 +1,12 @@
+import { assetUrl } from '@/lib/assets';
+
 export function Footer() {
   return (
     <footer className="bg-sicredi-dark text-white">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 md:grid-cols-[1fr_1.4fr] md:px-8">
         <div>
           <img
-            src="/assets/logos/sicredi-logo-full.png"
+            src={assetUrl('/assets/logos/sicredi-logo-full.png')}
             alt="Sicredi"
             className="h-16 w-auto bg-white p-2"
           />

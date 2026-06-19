@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.5
+
+- **Change Type:** Fix
+- **Description:** Correção de roteamento e caminhos de assets no GitHub Pages usando `BASE_URL` do Vite.
+- **Rationale:** Evitar tela de "Página não encontrada" e imagens quebradas quando a LP roda em `/lp-cartoes-sementes/`.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.4
 
 - **Change Type:** Fix

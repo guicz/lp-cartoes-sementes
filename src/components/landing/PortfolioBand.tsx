@@ -1,4 +1,5 @@
 import { SectionLabel } from '@/components/landing/SectionLabel';
+import { assetUrl } from '@/lib/assets';
 
 export function PortfolioBand() {
   return (
@@ -16,12 +17,12 @@ export function PortfolioBand() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <img
-            src="/assets/cards/visa-portfolio.png"
+            src={assetUrl('/assets/cards/visa-portfolio.png')}
             alt="Portfólio de cartões Sicredi Visa"
             className="sicredi-box h-full w-full object-cover"
           />
           <img
-            src="/assets/cards/mastercard-portfolio.png"
+            src={assetUrl('/assets/cards/mastercard-portfolio.png')}
             alt="Portfólio de cartões Sicredi Mastercard"
             className="sicredi-box h-full w-full object-cover"
           />

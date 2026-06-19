@@ -11,6 +11,7 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Seção de orientação para solicitação com links oficiais Sicredi.
 - Assets oficiais locais de logo, cartões e ícones Sicredi.
 - Layout responsivo validado em desktop e mobile via screenshot local.
+- Roteamento e assets compatíveis com GitHub Pages em subdiretório.
 
 ## Tech Stack
 
