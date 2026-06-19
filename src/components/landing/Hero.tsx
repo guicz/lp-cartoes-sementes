@@ -4,17 +4,20 @@ const heroCards = [
   {
     src: assetUrl('/assets/cards/black.webp'),
     alt: 'Cartão Sicredi Mastercard Black',
-    className: 'left-7 top-8 h-48 -rotate-6 md:left-10 md:top-10 md:h-64',
+    className:
+      'left-[12%] top-[12%] h-48 -rotate-6 md:left-[10%] md:top-[10%] md:h-64 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/platinum.webp'),
     alt: 'Cartão Sicredi Platinum',
-    className: 'right-7 top-24 h-32 rotate-3 md:right-12 md:top-32 md:h-44',
+    className:
+      'left-[8%] bottom-[18%] h-32 -rotate-2 md:left-[12%] md:bottom-[18%] md:h-44 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/gold.webp'),
     alt: 'Cartão Sicredi Gold',
-    className: 'bottom-8 right-14 h-32 rotate-6 md:bottom-10 md:right-20 md:h-44',
+    className:
+      'right-[8%] top-[34%] h-32 rotate-6 md:right-[8%] md:top-[34%] md:h-44 hero-card-shadow',
   },
 ];
 
@@ -55,17 +58,21 @@ export function Hero() {
         </div>
         <div className="relative">
           <div className="absolute -right-16 top-8 h-72 w-72 rounded-full bg-sicredi-soft blur-3xl" />
-          <div className="sicredi-box relative min-h-[360px] overflow-hidden bg-sicredi-green p-5 shadow-soft md:min-h-[470px] md:p-8">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(255,255,255,0.34),transparent_30%),radial-gradient(circle_at_75%_80%,rgba(20,110,55,0.45),transparent_34%)]" />
+          <div className="sicredi-box hero-stage relative min-h-[380px] overflow-hidden p-5 shadow-soft md:min-h-[500px] md:p-8">
+            <div className="hero-stage__beam hero-stage__beam--top" />
+            <div className="hero-stage__beam hero-stage__beam--base" />
+            <div className="hero-stage__outline" />
+            <div className="hero-stage__platform hero-stage__platform--back" />
+            <div className="hero-stage__platform hero-stage__platform--front" />
             {heroCards.map((card) => (
               <img
                 key={card.src}
                 src={card.src}
                 alt={card.alt}
-                className={`absolute w-auto object-contain drop-shadow-2xl ${card.className}`}
+                className={`absolute z-20 w-auto object-contain ${card.className}`}
               />
             ))}
-            <div className="absolute bottom-8 left-8 max-w-56 text-white md:bottom-10 md:left-10">
+            <div className="absolute bottom-8 left-8 z-30 max-w-56 text-white md:bottom-10 md:left-10">
               <p className="font-heading text-3xl font-bold italic leading-tight">
                 Black, Platinum e Gold
               </p>

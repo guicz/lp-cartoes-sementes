@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.8
+
+- **Change Type:** Feature
+- **Description:** Reinterpretação do hero com palco verde escuro, linhas de luz discretas e cartões Black, Platinum e Gold em camadas.
+- **Rationale:** Aproveitar a direção visual da arte de referência sem reintroduzir cartões verdes/descontinuados.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.7
 
 - **Change Type:** Fix
