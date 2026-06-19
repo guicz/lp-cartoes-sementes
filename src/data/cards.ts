@@ -3,17 +3,6 @@ import type { Benefit, SicrediCard } from '@/types/cards';
 
 export const cards: SicrediCard[] = [
   {
-    id: 'visa-infinite',
-    name: 'Sicredi Visa Infinite',
-    subtitle: 'Para viagens, experiências e benefícios premium.',
-    image: assetUrl('/assets/cards/infinite.webp'),
-    imageAlt: 'Cartão Sicredi Visa Infinite colorido',
-    tier: 'premium',
-    points: '3 pontos por dólar',
-    highlights: ['Pontos que não expiram', 'Acesso ilimitado a salas VIP', 'Benefícios para viagens'],
-    bestFor: 'Quem viaja com frequência e busca mais conforto em experiências especiais.',
-  },
-  {
     id: 'mastercard-black',
     name: 'Sicredi Mastercard Black™',
     subtitle: 'Para quem valoriza viagens e vantagens exclusivas.',
@@ -32,7 +21,7 @@ export const cards: SicrediCard[] = [
     imageAlt: 'Cartão Sicredi Platinum colorido',
     tier: 'equilibrio',
     points: '1,5 ponto por dólar',
-    highlights: ['Seguro de Emergência Médica Internacional', 'Benefícios de bandeira', 'Uso no dia a dia'],
+    highlights: ['Benefícios para viagens', 'Benefícios de bandeira', 'Uso no dia a dia'],
     bestFor: 'Quem quer um cartão versátil para compras, viagens e planejamento cotidiano.',
   },
   {

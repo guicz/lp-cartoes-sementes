@@ -6,12 +6,13 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 
 - Hero de campanha com CTA para conhecer cartões e falar com o Sicredi.
 - Grade de benefícios: aproximação, carteira digital, cartão virtual, recompensas, prazo e viagens.
-- Comparação dos cartões Sicredi Visa Infinite, Mastercard Black™, Platinum e Gold.
+- Comparação dos cartões Sicredi Mastercard Black™, Platinum e Gold.
 - Filtro por perfil de uso: todos, viagens, equilíbrio e rotina.
 - Seção de orientação para solicitação com links oficiais Sicredi.
 - Assets oficiais locais de logo, cartões e ícones Sicredi.
 - Layout responsivo validado em desktop e mobile via screenshot local.
 - Roteamento e assets compatíveis com GitHub Pages em subdiretório.
+- Remoção de cartões verdes/internacional das composições visuais.
 
 ## Tech Stack
 

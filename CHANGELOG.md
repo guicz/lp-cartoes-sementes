@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.6
+
+- **Change Type:** Fix
+- **Description:** Remoção dos cartões verdes/internacional das composições e da lista de cartões, troca do rodapé para fundo branco sem caixa atrás da logo.
+- **Rationale:** Corrigir informação de produto descontinuado e eliminar ruído visual no rodapé.
+- **Tech Debt:** Validar com a cooperativa a lista final de cartões vigentes antes de tráfego pago.
+
 ## v1.5
 
 - **Change Type:** Fix
