@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.7
+
+- **Change Type:** Fix
+- **Description:** Reorganização da seção de cartões para centralizar o grid após a remoção dos cartões verdes.
+- **Rationale:** Evitar desequilíbrio visual causado por layout anterior dimensionado para quatro cartões.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.6
 
 - **Change Type:** Fix

@@ -13,18 +13,27 @@ const filters: Array<{ value: CardFilter; label: string }> = [
 export function CardSelector() {
   const { filter, setFilter } = useCardFilterStore();
   const visibleCards = filter === 'todos' ? cards : cards.filter((card) => card.tier === filter);
+  const gridClass =
+    visibleCards.length === 1
+      ? 'max-w-sm grid-cols-1'
+      : visibleCards.length === 2
+        ? 'max-w-3xl md:grid-cols-2'
+        : 'max-w-5xl md:grid-cols-3';
 
   return (
     <section id="cartoes" className="bg-white py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
-          <div className="max-w-3xl">
+        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
+          <div className="max-w-4xl">
             <SectionLabel>Escolha o melhor cartão para você</SectionLabel>
             <h2 className="mt-3 font-heading text-4xl font-bold italic leading-tight text-sicredi-text md:text-5xl">
               Do dia a dia às viagens, tem um cartão para o seu momento.
             </h2>
           </div>
-          <div className="flex flex-wrap gap-2" aria-label="Filtrar cartões por perfil">
+          <div
+            className="flex flex-wrap justify-center gap-2"
+            aria-label="Filtrar cartões por perfil"
+          >
             {filters.map((item) => (
               <button
                 key={item.value}
@@ -43,7 +52,7 @@ export function CardSelector() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div className={cn('mx-auto mt-10 grid gap-5', gridClass)}>
           {visibleCards.map((card) => (
             <article
               key={card.id}

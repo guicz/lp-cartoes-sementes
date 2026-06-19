@@ -13,6 +13,7 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Layout responsivo validado em desktop e mobile via screenshot local.
 - Roteamento e assets compatíveis com GitHub Pages em subdiretório.
 - Remoção de cartões verdes/internacional das composições visuais.
+- Grid de cartões centralizado para a linha atual Black, Platinum e Gold.
 
 ## Tech Stack
 
