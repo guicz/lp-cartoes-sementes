@@ -1,30 +1,48 @@
 import { assetUrl } from '@/lib/assets';
 
+const heroBenefits = [
+  {
+    title: 'Aproximação',
+    text: 'Pague rápido no dia a dia',
+    icon: assetUrl('/assets/icons/cartao-credito.svg'),
+  },
+  {
+    title: 'Carteira digital',
+    text: 'Use no celular ou relógio',
+    icon: assetUrl('/assets/icons/aplicativo.svg'),
+  },
+  {
+    title: 'Recompensas',
+    text: 'Acumule pontos em cartões participantes',
+    icon: assetUrl('/assets/icons/recompensas.svg'),
+  },
+];
+
 const heroCards = [
   {
     src: assetUrl('/assets/cards/black.webp'),
     alt: 'Cartão Sicredi Mastercard Black',
     className:
-      'left-[12%] top-[12%] h-48 -rotate-6 md:left-[10%] md:top-[10%] md:h-64 hero-card-shadow',
+      'left-[7%] top-[12%] h-52 -rotate-6 md:left-[9%] md:top-[10%] md:h-72 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/platinum.webp'),
     alt: 'Cartão Sicredi Platinum',
     className:
-      'left-[8%] bottom-[18%] h-32 -rotate-2 md:left-[12%] md:bottom-[18%] md:h-44 hero-card-shadow',
+      'left-[9%] bottom-[18%] h-32 -rotate-2 md:left-[12%] md:bottom-[15%] md:h-48 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/gold.webp'),
     alt: 'Cartão Sicredi Gold',
     className:
-      'right-[8%] top-[34%] h-32 rotate-6 md:right-[8%] md:top-[34%] md:h-44 hero-card-shadow',
+      'right-[3%] top-[32%] h-32 rotate-6 md:right-[5%] md:top-[33%] md:h-48 hero-card-shadow',
   },
 ];
 
 export function Hero() {
   return (
     <section id="inicio" className="overflow-hidden bg-white">
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 pt-10 md:grid-cols-[1fr_0.9fr] md:px-8 md:pb-24 md:pt-16">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 pt-10 md:grid-cols-[0.82fr_1.18fr] md:px-8 md:pb-24 md:pt-16">
         <div>
           <p className="font-heading text-sm font-bold uppercase tracking-normal text-sicredi-green">
             Cartões de crédito
@@ -50,15 +68,24 @@ export function Hero() {
               Falar com o Sicredi
             </a>
           </div>
-          <div className="mt-10 grid gap-3 text-sm font-bold text-sicredi-text sm:grid-cols-3">
-            <span className="sicredi-box bg-sicredi-surface p-4">Aproximação</span>
-            <span className="sicredi-box bg-sicredi-surface p-4">Carteira digital</span>
-            <span className="sicredi-box bg-sicredi-surface p-4">Recompensas</span>
+          <div className="mt-10 grid gap-3 sm:grid-cols-3">
+            {heroBenefits.map((benefit) => (
+              <article
+                key={benefit.title}
+                className="sicredi-box hero-benefit group border border-sicredi-soft bg-white p-4 shadow-sm"
+              >
+                <span className="flex h-10 w-10 items-center justify-center rounded-none bg-sicredi-soft/65">
+                  <img src={benefit.icon} alt="" aria-hidden="true" className="h-6 w-6" />
+                </span>
+                <h2 className="mt-3 text-sm font-extrabold text-sicredi-text">{benefit.title}</h2>
+                <p className="mt-1 text-xs font-bold leading-5 text-sicredi-muted">{benefit.text}</p>
+              </article>
+            ))}
           </div>
         </div>
         <div className="relative">
           <div className="absolute -right-16 top-8 h-72 w-72 rounded-full bg-sicredi-soft blur-3xl" />
-          <div className="sicredi-box hero-stage relative min-h-[380px] overflow-hidden p-5 shadow-soft md:min-h-[500px] md:p-8">
+          <div className="sicredi-box hero-stage relative min-h-[390px] overflow-hidden p-5 shadow-soft md:min-h-[520px] md:p-8">
             <div className="hero-stage__beam hero-stage__beam--top" />
             <div className="hero-stage__beam hero-stage__beam--base" />
             <div className="hero-stage__outline" />
@@ -72,8 +99,8 @@ export function Hero() {
                 className={`absolute z-20 w-auto object-contain ${card.className}`}
               />
             ))}
-            <div className="absolute bottom-8 left-8 z-30 max-w-56 text-white md:bottom-10 md:left-10">
-              <p className="font-heading text-3xl font-bold italic leading-tight">
+            <div className="sicredi-box absolute bottom-6 left-6 z-30 max-w-64 bg-white/12 p-5 text-white backdrop-blur-md md:bottom-8 md:left-8">
+              <p className="font-heading text-3xl font-bold italic leading-tight md:text-4xl">
                 Black, Platinum e Gold
               </p>
               <p className="mt-3 text-sm font-bold leading-5 text-white/85">

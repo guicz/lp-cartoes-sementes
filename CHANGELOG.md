@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.9
+
+- **Change Type:** Feature
+- **Description:** Refinamento do hero em formato de banner premium e substituição das três caixas cinzas por benefícios com ícones oficiais Sicredi.
+- **Rationale:** Melhorar hierarquia visual e aproveitar melhor a direção da arte de referência sem quebrar regras de marca.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.8
 
 - **Change Type:** Feature
