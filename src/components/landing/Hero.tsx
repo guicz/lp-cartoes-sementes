@@ -29,7 +29,7 @@ const heroCards = [
     src: assetUrl('/assets/cards/platinum.webp'),
     alt: 'Cartão Sicredi Platinum',
     className:
-      'left-[21%] bottom-[17%] h-32 -rotate-2 md:left-[25%] md:bottom-[15%] md:h-48 hero-card-shadow',
+      'left-[50%] bottom-[17%] h-32 -rotate-2 md:left-[42%] md:bottom-[15%] md:h-48 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/gold.webp'),
@@ -99,7 +99,7 @@ export function Hero() {
                 className={`absolute z-20 w-auto object-contain ${card.className}`}
               />
             ))}
-            <div className="hero-stage__caption absolute bottom-5 left-5 z-30 max-w-48 text-white md:bottom-7 md:left-7 md:max-w-56">
+            <div className="sicredi-box hero-stage__caption absolute bottom-5 left-5 z-30 max-w-36 bg-white/12 p-4 text-white backdrop-blur-md md:bottom-7 md:left-7 md:max-w-56 md:p-5">
               <p className="font-heading text-2xl font-bold italic leading-tight md:text-3xl">
                 Black, Platinum e Gold
               </p>

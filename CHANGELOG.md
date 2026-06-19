@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.11
+
+- **Change Type:** Fix
+- **Description:** Restauração da legenda translúcida do hero com área livre para não sobrepor os cartões.
+- **Rationale:** Preservar o efeito visual aprovado e corrigir a interferência sobre o cartão Platinum.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.10
 
 - **Change Type:** Fix
