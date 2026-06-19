@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.15
+
+- **Change Type:** Fix
+- **Description:** Substituição da caixa verde da seção de benefícios por marcadores leves abaixo do título.
+- **Rationale:** Reduzir peso visual e manter a seção mais equilibrada sem perder presença de marca.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.14
 
 - **Change Type:** Feature

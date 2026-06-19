@@ -5,22 +5,21 @@ export function BenefitGrid() {
   return (
     <section id="beneficios" className="benefits-section relative overflow-hidden py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid items-end gap-6 md:grid-cols-[1fr_0.48fr]">
-          <div className="max-w-3xl">
-            <SectionLabel>Vantagens que combinam com você</SectionLabel>
-            <h2 className="mt-3 font-heading text-4xl font-bold italic leading-tight text-sicredi-text md:text-5xl">
-              Use do seu jeito, com benefícios para a rotina.
-            </h2>
+        <div className="max-w-4xl">
+          <SectionLabel>Vantagens que combinam com você</SectionLabel>
+          <h2 className="mt-3 font-heading text-4xl font-bold italic leading-tight text-sicredi-text md:text-5xl">
+            Use do seu jeito, com benefícios para a rotina.
+          </h2>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {['Dia a dia', 'Compras online', 'Viagens e pontos'].map((item) => (
+              <span
+                key={item}
+                className="sicredi-box border border-sicredi-soft bg-white/86 px-4 py-2 text-sm font-extrabold text-sicredi-dark shadow-sm"
+              >
+                {item}
+              </span>
+            ))}
           </div>
-          <aside className="sicredi-box benefit-summary bg-sicredi-dark p-6 text-white shadow-soft">
-            <p className="font-heading text-4xl font-bold italic leading-none">6</p>
-            <p className="mt-2 text-lg font-extrabold leading-6">
-              benefícios para comprar com mais praticidade
-            </p>
-            <p className="mt-3 text-sm font-bold leading-6 text-white/82">
-              Recursos para o dia a dia, compras online, recompensas e momentos fora da rotina.
-            </p>
-          </aside>
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit, index) => (

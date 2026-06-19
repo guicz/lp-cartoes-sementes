@@ -172,12 +172,6 @@ select:focus-visible {
     );
 }
 
-.benefit-summary {
-  background:
-    linear-gradient(135deg, rgba(63, 161, 16, 0.28), transparent 42%),
-    linear-gradient(135deg, #146e37, #0b4524);
-}
-
 .benefit-card {
   min-height: 238px;
   transition:
