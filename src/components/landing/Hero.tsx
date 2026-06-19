@@ -23,19 +23,19 @@ const heroCards = [
     src: assetUrl('/assets/cards/black.webp'),
     alt: 'Cartão Sicredi Mastercard Black',
     className:
-      'left-[7%] top-[7%] h-44 -rotate-6 md:left-[9%] md:top-[8%] md:h-72 hero-card-shadow',
+      'left-[5%] top-[2%] h-44 -rotate-6 md:left-[8%] md:top-[2%] md:h-72 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/platinum.webp'),
     alt: 'Cartão Sicredi Platinum',
     className:
-      'left-[34%] top-[32%] h-24 -rotate-2 md:left-[38%] md:top-[36%] md:h-44 hero-card-shadow',
+      'left-[34%] top-[38%] h-24 -rotate-2 md:left-[39%] md:top-[42%] md:h-44 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/gold.webp'),
     alt: 'Cartão Sicredi Gold',
     className:
-      'right-[4%] top-[23%] h-28 rotate-6 md:right-[5%] md:top-[25%] md:h-48 hero-card-shadow',
+      'right-[2%] top-[20%] h-28 rotate-6 md:right-[4%] md:top-[25%] md:h-48 hero-card-shadow',
   },
 ];
 
@@ -85,21 +85,23 @@ export function Hero() {
         </div>
         <div className="relative">
           <div className="absolute -right-16 top-8 h-72 w-72 rounded-full bg-sicredi-soft blur-3xl" />
-          <div className="sicredi-box hero-stage relative min-h-[420px] overflow-hidden p-5 shadow-soft md:min-h-[540px] md:p-8">
+          <div className="sicredi-box hero-stage relative flex min-h-[450px] flex-col overflow-hidden p-5 shadow-soft md:min-h-[560px] md:p-8">
             <div className="hero-stage__beam hero-stage__beam--top" />
             <div className="hero-stage__beam hero-stage__beam--base" />
             <div className="hero-stage__outline" />
             <div className="hero-stage__platform hero-stage__platform--back" />
             <div className="hero-stage__platform hero-stage__platform--front" />
-            {heroCards.map((card) => (
-              <img
-                key={card.src}
-                src={card.src}
-                alt={card.alt}
-                className={`absolute z-20 w-auto object-contain ${card.className}`}
-              />
-            ))}
-            <div className="sicredi-box hero-stage__caption absolute inset-x-5 bottom-5 z-30 bg-white/12 p-4 text-white backdrop-blur-md md:inset-x-7 md:bottom-7 md:p-5">
+            <div className="hero-stage__visual relative z-20 min-h-[285px] flex-1 md:min-h-[390px]">
+              {heroCards.map((card) => (
+                <img
+                  key={card.src}
+                  src={card.src}
+                  alt={card.alt}
+                  className={`absolute w-auto object-contain ${card.className}`}
+                />
+              ))}
+            </div>
+            <div className="sicredi-box hero-stage__caption relative z-30 mt-4 bg-white/12 p-4 text-white backdrop-blur-md md:mt-5 md:p-5">
               <p className="font-heading text-2xl font-bold italic leading-tight md:text-3xl">
                 Black, Platinum e Gold
               </p>

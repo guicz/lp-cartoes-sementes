@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.13
+
+- **Change Type:** Fix
+- **Description:** Separação estrutural entre a cena dos cartões e a faixa translúcida do hero.
+- **Rationale:** Eliminar risco de sobreposição por cache, tamanho de imagem ou variação de viewport.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.12
 
 - **Change Type:** Fix
