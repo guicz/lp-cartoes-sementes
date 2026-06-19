@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.18
+
+- **Change Type:** Docs
+- **Description:** Inclusão de disclaimer legal ampliado no rodapé da LP.
+- **Rationale:** Deixar mais explícitas as condições de análise de crédito, contratação, disponibilidade e variação de benefícios.
+- **Tech Debt:** Validar redação final com jurídico/compliance antes de uso em mídia paga ou campanha regulada.
+
 ## v1.17
 
 - **Change Type:** Feature

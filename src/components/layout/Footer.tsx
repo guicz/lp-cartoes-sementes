@@ -14,11 +14,18 @@ export function Footer() {
             Sicredi Sementes do Sul. Cartões para acompanhar diferentes momentos da sua vida.
           </p>
         </div>
-        <p className="text-sm leading-6 text-sicredi-muted">
-          Benefícios, pontuações, disponibilidade de cartões e condições estão sujeitos à análise,
-          contratação, regras das bandeiras e disponibilidade na cooperativa/região. Consulte sua
-          unidade de atendimento Sicredi antes de contratar.
-        </p>
+        <div className="sicredi-box border border-sicredi-soft bg-sicredi-surface/70 p-5 text-sm leading-6 text-sicredi-muted">
+          <p className="font-extrabold text-sicredi-text">Disclaimer</p>
+          <p className="mt-2">
+            A solicitação e a concessão dos cartões estão sujeitas à análise de crédito, aprovação
+            cadastral, disponibilidade na cooperativa/região, contratação e regras das bandeiras.
+          </p>
+          <p className="mt-2">
+            Benefícios, pontuações, limites, tarifas, anuidades, prazos e condições podem variar
+            conforme o cartão contratado e ser alterados sem aviso prévio. Consulte sua unidade de
+            atendimento Sicredi antes de contratar.
+          </p>
+        </div>
       </div>
     </footer>
   );

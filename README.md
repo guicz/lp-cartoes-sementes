@@ -22,6 +22,8 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 
 - Seções de cartões participantes e como pedir com camadas translúcidas, catavento de fundo animado no scroll e ícones oficiais nos passos.
 
+- Rodapé com disclaimer ampliado sobre análise de crédito, contratação, disponibilidade e variação de condições.
+
 ## Tech Stack
 
 - Vite + React + TypeScript.
