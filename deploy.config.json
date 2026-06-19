@@ -1,0 +1,14 @@
+{
+  "target": "hostinger",
+  "deployStrategy": "hpanel-auto-git",
+  "branch": "main",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "startCommand": "npm start",
+  "startFile": "server.js",
+  "outputDirectory": "build",
+  "runtime": {
+    "node": "20",
+    "port": "process.env.PORT"
+  }
+}

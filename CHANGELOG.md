@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.22
+
+- **Change Type:** Config
+- **Description:** Preparação do projeto para Hostinger Node.js Hosting com npm, `package-lock.json`, `server.js`, fallback `index.js`, output `build/`, `deploy.config.json` e scripts `build/start/check`.
+- **Rationale:** Adequar o deploy ao padrão hPanel Auto Git, reduzindo falhas de autodetecção e garantindo SPA fallback em produção.
+- **Tech Debt:** O deploy real ainda depende da configuração manual no hPanel com branch `main`, Node 20.x, entry point `server.js` e output `build`.
+
 ## v1.21
 
 - **Change Type:** Fix
