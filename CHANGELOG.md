@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.4
+
+- **Change Type:** Fix
+- **Description:** Alteração do deploy para publicar o build na branch `gh-pages`, evitando dependência da configuração inicial de GitHub Pages via Actions.
+- **Rationale:** Contornar bloqueio de Pages não habilitado nas configurações do repositório sem exigir acesso administrativo pela automação.
+- **Tech Debt:** Confirmar no GitHub Settings > Pages se a fonte ficou apontada para `gh-pages`/root.
+
 ## v1.3
 
 - **Change Type:** Fix
