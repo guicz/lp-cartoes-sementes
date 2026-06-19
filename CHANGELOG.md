@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.10
+
+- **Change Type:** Fix
+- **Description:** Reposicionamento da legenda do hero para não cobrir o cartão Platinum.
+- **Rationale:** Corrigir sobreposição visual identificada em revisão de produção.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.9
 
 - **Change Type:** Feature
