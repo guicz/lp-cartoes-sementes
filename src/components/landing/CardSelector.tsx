@@ -60,7 +60,15 @@ export function CardSelector() {
             >
               <div className={cn('product-card-stage', `product-card-stage--${card.tier}`)}>
                 <span className="product-card-stage__halo" />
-                <img src={card.image} alt={card.imageAlt} className="product-card-stage__image" />
+                <img
+                  src={card.image}
+                  alt={card.imageAlt}
+                  width={card.id === 'mastercard-black' ? 154 : 238}
+                  height={card.id === 'mastercard-black' ? 247 : 163}
+                  loading="lazy"
+                  decoding="async"
+                  className="product-card-stage__image"
+                />
               </div>
               <div className="flex flex-1 flex-col pt-6">
                 <h3 className="font-heading text-2xl font-bold text-sicredi-text">{card.name}</h3>

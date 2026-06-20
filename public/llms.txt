@@ -1,0 +1,19 @@
+# LP Cartões Sicredi Sementes do Sul
+
+Landing page da Sicredi Sementes do Sul para orientar pessoas interessadas em cartões de crédito Sicredi Black, Platinum e Gold.
+
+## Recursos canônicos
+
+- Página principal: https://guicz.github.io/lp-cartoes-sementes/
+- Sitemap: https://guicz.github.io/lp-cartoes-sementes/sitemap.xml
+- Cartões oficiais Sicredi: https://www.sicredi.com.br/site/cartoes/cartao-para-voce/
+
+## Conteúdo principal
+
+- Benefícios: pagamento por aproximação, carteira digital, cartão virtual, recompensas, mais prazo para pagar e benefícios para viagens.
+- Cartões destacados: Sicredi Mastercard Black, Sicredi Platinum e Sicredi Gold.
+- Atendimento: a contratação depende de análise de crédito, disponibilidade regional e regras da cooperativa.
+
+## Observações para agentes
+
+Não há coleta de dados, login, checkout ou formulário transacional nesta versão. Use os links oficiais da página para atendimento e confirmação de disponibilidade.

@@ -22,18 +22,27 @@ const heroCards = [
   {
     src: assetUrl('/assets/cards/black.webp'),
     alt: 'Cartão Sicredi Mastercard Black',
+    width: 154,
+    height: 247,
+    fetchPriority: 'high' as const,
     className:
       'left-[5%] top-[2%] h-44 -rotate-6 md:left-[8%] md:top-[2%] md:h-72 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/platinum.webp'),
     alt: 'Cartão Sicredi Platinum',
+    width: 238,
+    height: 163,
+    fetchPriority: 'auto' as const,
     className:
       'left-[34%] top-[38%] h-24 -rotate-2 md:left-[39%] md:top-[42%] md:h-44 hero-card-shadow',
   },
   {
     src: assetUrl('/assets/cards/gold.webp'),
     alt: 'Cartão Sicredi Gold',
+    width: 238,
+    height: 163,
+    fetchPriority: 'auto' as const,
     className:
       'right-[2%] top-[20%] h-28 rotate-6 md:right-[4%] md:top-[25%] md:h-48 hero-card-shadow',
   },
@@ -97,6 +106,10 @@ export function Hero() {
                   key={card.src}
                   src={card.src}
                   alt={card.alt}
+                  width={card.width}
+                  height={card.height}
+                  decoding="async"
+                  fetchPriority={card.fetchPriority}
                   className={`absolute w-auto object-contain ${card.className}`}
                 />
               ))}

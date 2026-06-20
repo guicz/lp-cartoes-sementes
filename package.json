@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
+    "build": "node scripts/prepare-seo.mjs && vite build",
     "start": "node server.js",
     "check": "tsc -b && eslint .",
     "preview": "vite preview --host 0.0.0.0",

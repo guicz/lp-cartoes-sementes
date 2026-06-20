@@ -14,6 +14,8 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Vitrine de cartões participantes em fundo claro, com texto escuro legível e composição assimétrica Black/Platinum/Gold.
 - Rodapé centralizado com logo oficial, dados da Sicredi Sementes do Sul e disclaimer sem caixa visual.
 - Servidor Express para Hostinger Node.js Hosting com SPA fallback e `/api/health`.
+- SEO técnico no build: title, description, canonical, Open Graph, Twitter Card, JSON-LD, `robots.txt`, `sitemap.xml` e `llms.txt`.
+- Otimizações de performance: preload do card principal do hero, dimensões fixas nas imagens críticas e cache HTTP para assets versionados.
 
 ## Tech Stack
 
@@ -55,8 +57,11 @@ Deploy alvo: Hostinger Node.js Hosting via hPanel Auto Git.
 - Start command: `npm start`
 - Entry point: `server.js`
 - Output directory: `build`
+- Environment variable recomendada: `APP_URL=https://dominio-final`
 
 O arquivo `deploy.config.json` documenta esses mesmos parâmetros.
+
+`APP_URL` alimenta canonical, sitemap, Open Graph e `llms.txt`. Se não estiver configurada, o build usa `https://guicz.github.io/lp-cartoes-sementes/` como fallback.
 
 Para GitHub Pages legado, o Vite ainda respeita `GITHUB_PAGES=true` para base `/lp-cartoes-sementes/`, mas o fluxo principal atual é Hostinger com base `/`.
 
@@ -65,4 +70,4 @@ Para GitHub Pages legado, o Vite ainda respeita `GITHUB_PAGES=true` para base `/
 - Não há persistência, autenticação ou coleta de dados nesta versão.
 - Benefícios e disponibilidade devem ser validados com a cooperativa/região antes de produção.
 - Ícones visíveis devem permanecer restritos aos SVGs oficiais em `public/assets/icons`.
-- Configure `APP_URL` no hPanel se o domínio final for usado por monitoramento ou integrações futuras.
+- Configure `APP_URL` no hPanel com o domínio público final antes do deploy de produção.

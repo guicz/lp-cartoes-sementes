@@ -14,6 +14,10 @@ export function Header() {
           <img
             src={assetUrl('/assets/logos/sicredi-logo-full.png')}
             alt="Sicredi"
+            width="520"
+            height="376"
+            decoding="async"
+            fetchPriority="high"
             className="h-12 w-auto sm:h-14"
           />
         </a>

@@ -9,11 +9,12 @@ export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ['server.js', 'index.js'],
+    files: ['server.js', 'index.js', 'scripts/*.mjs'],
     languageOptions: {
       globals: {
         console: 'readonly',
         process: 'readonly',
+        URL: 'readonly',
       },
     },
   },

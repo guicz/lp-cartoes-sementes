@@ -7,6 +7,10 @@ export function Footer() {
         <img
           src={assetUrl('/assets/logos/sicredi-logo-full.png')}
           alt="Sicredi"
+          width="520"
+          height="376"
+          loading="lazy"
+          decoding="async"
           className="h-16 w-auto"
         />
 

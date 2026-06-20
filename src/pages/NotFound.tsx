@@ -8,6 +8,9 @@ export function NotFound() {
         <img
           src={assetUrl('/assets/logos/sicredi-logo-full.png')}
           alt="Sicredi"
+          width="520"
+          height="376"
+          decoding="async"
           className="mx-auto h-20 w-auto"
         />
         <h1 className="mt-8 font-heading text-4xl font-bold italic text-sicredi-text">

@@ -61,7 +61,15 @@ export function PortfolioBand() {
               <span className="portfolio-ticket__number">0{index + 1}</span>
               <div className="portfolio-ticket__visual" aria-hidden="true">
                 <span className="portfolio-ticket__glow" />
-                <img src={card.src} alt="" className="portfolio-ticket__image" />
+                <img
+                  src={card.src}
+                  alt=""
+                  width={card.tone === 'black' ? 154 : 238}
+                  height={card.tone === 'black' ? 247 : 163}
+                  loading="lazy"
+                  decoding="async"
+                  className="portfolio-ticket__image"
+                />
               </div>
               <div className="portfolio-ticket__copy">
                 <p className="portfolio-ticket__name">{card.name}</p>
@@ -69,7 +77,6 @@ export function PortfolioBand() {
                 <p className="portfolio-ticket__points">{card.points}</p>
                 <p className="portfolio-ticket__detail">{card.detail}</p>
               </div>
-              <img src={card.src} alt={card.alt} className="sr-only" />
             </article>
           ))}
         </div>

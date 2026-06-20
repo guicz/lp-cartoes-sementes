@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.23
+
+- **Change Type:** Feature
+- **Description:** Implementação de SEO técnico e otimizações de performance para produção, incluindo metatags completas, canonical, Open Graph, Twitter Card, JSON-LD, geração de `robots.txt`, `sitemap.xml`, `llms.txt`, preload da imagem principal, dimensões explícitas em imagens e cache HTTP no servidor Express.
+- **Rationale:** Melhorar indexação, compartilhamento social, legibilidade para mecanismos de busca/LLMs e estabilidade visual/performance da LP em produção.
+- **Tech Debt:** Configurar `APP_URL` no hPanel com o domínio final da campanha antes do deploy definitivo para evitar canonical e sitemap apontando para o fallback do GitHub Pages.
+
 ## v1.22
 
 - **Change Type:** Config
