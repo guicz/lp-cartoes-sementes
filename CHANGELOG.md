@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.28
+
+- **Change Type:** Fix
+- **Description:** Troca da imagem Open Graph para composição quadrada 1200x1200 com logo oficial em área segura.
+- **Rationale:** Evitar corte visual nas miniaturas quadradas usadas por WhatsApp e outros previews compactos.
+- **Tech Debt:** Revalidar preview após atualização de cache externo do WhatsApp/Facebook.
+
+## v1.27
+
+- **Change Type:** Fix
+- **Description:** Substituição do favicon customizado pela logo oficial Sicredi já existente nos assets do projeto.
+- **Rationale:** Evitar uso de símbolo reconstruído e manter fidelidade ao asset oficial da marca.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.26
 
 - **Change Type:** Fix
