@@ -7,7 +7,7 @@ const siteUrl = new URL(process.env.APP_URL || process.env.VITE_SITE_URL || fall
   .toString()
   .replace(/\/$/, '');
 const canonicalUrl = `${siteUrl}/`;
-const socialImageUrl = `${siteUrl}/assets/logos/sicredi-logo-full.png`;
+const socialImageUrl = `${siteUrl}/og-image.png`;
 
 const structuredData = {
   '@context': 'https://schema.org',

@@ -15,6 +15,7 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Rodapé centralizado com logo oficial, dados da Sicredi Sementes do Sul e disclaimer sem caixa visual.
 - Servidor Express para Hostinger Node.js Hosting com SPA fallback e `/api/health`.
 - SEO técnico no build: title, description, canonical, Open Graph, Twitter Card, JSON-LD, `robots.txt`, `sitemap.xml` e `llms.txt`.
+- Favicon SVG e imagem Open Graph 1200x630 dedicada para evitar corte em compartilhamentos.
 - Otimizações de performance: preload do card principal do hero, dimensões fixas nas imagens críticas e cache HTTP para assets versionados.
 
 ## Tech Stack

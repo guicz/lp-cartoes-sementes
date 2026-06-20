@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.24
+
+- **Change Type:** Fix
+- **Description:** Inclusão de favicon SVG e troca da imagem Open Graph para arte dedicada em 1200x630, com metadados de largura, altura, tipo e texto alternativo.
+- **Rationale:** Evitar corte da logo em prévias de WhatsApp/redes sociais e garantir identificação visual da página na aba do navegador.
+- **Tech Debt:** Revalidar o preview no WhatsApp/Facebook após o cache externo atualizar a URL pública.
+
 ## v1.23
 
 - **Change Type:** Feature
