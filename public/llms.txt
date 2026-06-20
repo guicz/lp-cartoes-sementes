@@ -4,8 +4,8 @@ Landing page da Sicredi Sementes do Sul para orientar pessoas interessadas em ca
 
 ## Recursos canônicos
 
-- Página principal: https://guicz.github.io/lp-cartoes-sementes/
-- Sitemap: https://guicz.github.io/lp-cartoes-sementes/sitemap.xml
+- Página principal: https://cartoes.sicredisementesdosul.com.br/
+- Sitemap: https://cartoes.sicredisementesdosul.com.br/sitemap.xml
 - Cartões oficiais Sicredi: https://www.sicredi.com.br/site/cartoes/cartao-para-voce/
 
 ## Conteúdo principal

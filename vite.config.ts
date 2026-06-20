@@ -2,7 +2,7 @@ import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
-const fallbackUrl = 'https://guicz.github.io/lp-cartoes-sementes/';
+const fallbackUrl = 'https://cartoes.sicredisementesdosul.com.br/';
 const siteUrl = new URL(process.env.APP_URL || process.env.VITE_SITE_URL || fallbackUrl)
   .toString()
   .replace(/\/$/, '');

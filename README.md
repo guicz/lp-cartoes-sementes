@@ -62,7 +62,7 @@ Deploy alvo: Hostinger Node.js Hosting via hPanel Auto Git.
 
 O arquivo `deploy.config.json` documenta esses mesmos parâmetros.
 
-`APP_URL` alimenta canonical, sitemap, Open Graph e `llms.txt`. Se não estiver configurada, o build usa `https://guicz.github.io/lp-cartoes-sementes/` como fallback.
+`APP_URL` alimenta canonical, sitemap, Open Graph e `llms.txt`. Se não estiver configurada, o build usa `https://cartoes.sicredisementesdosul.com.br/` como fallback.
 
 Para GitHub Pages legado, o Vite ainda respeita `GITHUB_PAGES=true` para base `/lp-cartoes-sementes/`, mas o fluxo principal atual é Hostinger com base `/`.
 

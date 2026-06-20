@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const fallbackUrl = 'https://guicz.github.io/lp-cartoes-sementes/';
+const fallbackUrl = 'https://cartoes.sicredisementesdosul.com.br/';
 const rawUrl = process.env.APP_URL || process.env.VITE_SITE_URL || fallbackUrl;
 const siteUrl = new URL(rawUrl).toString().replace(/\/$/, '');
 const publicDir = path.resolve('public');

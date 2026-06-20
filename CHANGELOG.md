@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.26
+
+- **Change Type:** Fix
+- **Description:** Correção do fallback público de SEO/Open Graph para `https://cartoes.sicredisementesdosul.com.br/`, evitando imagem social apontando para GitHub Pages.
+- **Rationale:** Garantir que `og:image`, sitemap, robots e `llms.txt` usem o domínio real da LP quando `APP_URL` não estiver configurada no ambiente de build.
+- **Tech Debt:** Revalidar o preview social após o deploy e limpeza de cache do WhatsApp/Facebook.
+
+## v1.25
+
+- **Change Type:** Fix
+- **Description:** Ajuste do favicon para usar apenas o catavento Sicredi em verde, sem fundo colorido.
+- **Rationale:** Atender à preferência visual da marca no ícone da aba, removendo a caixa verde anterior.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.24
 
 - **Change Type:** Fix

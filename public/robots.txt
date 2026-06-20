@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://guicz.github.io/lp-cartoes-sementes/sitemap.xml
+Sitemap: https://cartoes.sicredisementesdosul.com.br/sitemap.xml
