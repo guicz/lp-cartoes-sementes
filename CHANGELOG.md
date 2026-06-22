@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.33
+
+- **Change Type:** Fix
+- **Description:** Remoção da composição de cartões sobreposta no hero e ajuste do banner para priorizar a foto humanizada, com marca d'água discreta apenas no desktop.
+- **Rationale:** Corrigir o elemento visual estranho no banner, melhorar a leitura e deixar a primeira dobra mais limpa.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.32
 
 - **Change Type:** Fix
