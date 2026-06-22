@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.32
+
+- **Change Type:** Fix
+- **Description:** Substituição da foto do hero por uma imagem humanizada com área escura livre para texto e ajuste do overlay para melhorar legibilidade.
+- **Rationale:** Corrigir leitura ruim do título e tornar o banner mais claro, humano e coerente com a campanha.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.31
 
 - **Change Type:** Fix
