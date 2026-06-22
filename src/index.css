@@ -54,6 +54,111 @@ select:focus-visible {
   text-wrap: balance;
 }
 
+.hero-section {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(215, 230, 200, 0.56), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #f7fbf4 100%);
+}
+
+.hero-banner {
+  min-height: clamp(620px, 74vh, 760px);
+  isolation: isolate;
+  background: #073d22;
+}
+
+.hero-banner__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+}
+
+.hero-banner__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(5, 36, 21, 0.96) 0%, rgba(8, 54, 30, 0.82) 39%, rgba(8, 54, 30, 0.18) 67%, rgba(5, 36, 21, 0) 100%),
+    linear-gradient(180deg, rgba(5, 36, 21, 0.04) 0%, rgba(5, 36, 21, 0.24) 100%);
+}
+
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 2;
+  height: 40%;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(5, 36, 21, 0.62));
+}
+
+.hero-banner__content {
+  position: relative;
+  z-index: 4;
+  max-width: 680px;
+  padding: clamp(2rem, 6vw, 5.4rem);
+}
+
+.hero-card-cluster {
+  position: absolute;
+  right: clamp(1rem, 5vw, 4rem);
+  bottom: clamp(1rem, 4vw, 3.2rem);
+  z-index: 5;
+  width: min(43vw, 490px);
+  min-width: 330px;
+  height: 300px;
+  border-radius: 0 28px 28px;
+  background:
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.24), transparent 32%),
+    linear-gradient(135deg, rgba(20, 110, 55, 0.62), rgba(5, 36, 21, 0.56));
+  border: 1px solid rgba(215, 230, 200, 0.28);
+  box-shadow: 0 28px 80px rgba(5, 36, 21, 0.32);
+  backdrop-filter: blur(12px);
+}
+
+.hero-card-cluster::before {
+  content: '';
+  position: absolute;
+  inset: 11% 7%;
+  border: 1px solid rgba(215, 230, 200, 0.26);
+  border-radius: 0 36px 36px;
+  transform: rotate(-4deg);
+}
+
+.hero-card-cluster > img {
+  z-index: 2;
+}
+
+.hero-card-cluster__caption {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 18px;
+  z-index: 3;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(5, 36, 21, 0.54);
+  backdrop-filter: blur(10px);
+}
+
+.footer-disclaimer summary::marker {
+  color: #146e37;
+  font-size: 0.9rem;
+}
+
+.footer-disclaimer[open] summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.legal-hero {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(215, 230, 200, 0.58), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f7fbf4 100%);
+}
+
 .hero-stage {
   background:
     radial-gradient(circle at 13% 8%, rgba(215, 230, 200, 0.58), transparent 21%),
@@ -584,6 +689,33 @@ select:focus-visible {
 }
 
 @media (max-width: 767px) {
+  .hero-banner {
+    min-height: 760px;
+  }
+
+  .hero-banner__photo {
+    object-position: 62% center;
+  }
+
+  .hero-banner__veil {
+    background:
+      linear-gradient(180deg, rgba(5, 36, 21, 0.94) 0%, rgba(8, 54, 30, 0.8) 46%, rgba(5, 36, 21, 0.18) 100%),
+      linear-gradient(90deg, rgba(5, 36, 21, 0.82), rgba(5, 36, 21, 0.08));
+  }
+
+  .hero-banner__content {
+    padding: 2rem 1.25rem;
+  }
+
+  .hero-card-cluster {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    width: auto;
+    min-width: 0;
+    height: 282px;
+  }
+
   .portfolio-copy::before {
     height: calc(100% - 0.8rem);
   }

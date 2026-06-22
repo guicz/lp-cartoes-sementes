@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.30
+
+- **Change Type:** Feature
+- **Description:** Criação das páginas de Política de Privacidade, Política de Cookies e Consentimentos, revisão do rodapé em três colunas no modelo da referência e disclaimer recolhido por padrão com controle de abertura.
+- **Rationale:** Completar a base legal/informativa da LP e reduzir peso visual do disclaimer sem ocultar seu conteúdo.
+- **Tech Debt:** Recomenda-se validação jurídica/compliance da redação final antes de tráfego pago.
+
+## v1.29
+
+- **Change Type:** Feature
+- **Description:** Revisão visual de marca com troca para o asset oficial `Ativo 1.svg`, favicon igual ao da LP de Consórcios Sicredi Sementes do Sul e hero/banner humanizado com fotografia de atendimento e cartões em apoio.
+- **Rationale:** Reforçar fidelidade de marca, aproximar a LP da referência visual indicada e tornar o primeiro impacto mais humano, cooperativo e crível.
+- **Tech Debt:** Validar a foto final com a equipe de marca caso haja preferência por banco de imagem proprietário ou sessão local.
+
 ## v1.28
 
 - **Change Type:** Fix

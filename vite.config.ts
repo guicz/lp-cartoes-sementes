@@ -18,7 +18,7 @@ const structuredData = {
       name: 'Sicredi Sementes do Sul',
       alternateName: 'Cooperativa de Crédito Sicredi Sementes do Sul',
       url: canonicalUrl,
-      logo: `${siteUrl}/assets/logos/sicredi-logo-full.png`,
+      logo: `${siteUrl}/assets/logos/sicredi-logo-official.svg`,
       image: socialImageUrl,
       telephone: '+55-54-3383-3850',
       address: {

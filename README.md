@@ -15,7 +15,10 @@ Landing page de campanha para divulgar os cartões Sicredi de pessoa física, co
 - Rodapé centralizado com logo oficial, dados da Sicredi Sementes do Sul e disclaimer sem caixa visual.
 - Servidor Express para Hostinger Node.js Hosting com SPA fallback e `/api/health`.
 - SEO técnico no build: title, description, canonical, Open Graph, Twitter Card, JSON-LD, `robots.txt`, `sitemap.xml` e `llms.txt`.
-- Favicon usando a logo oficial Sicredi e imagem Open Graph quadrada dedicada para evitar corte em WhatsApp e compartilhamentos.
+- Logo oficial Sicredi em SVG, favicon alinhado à referência de Consórcios e imagem Open Graph quadrada dedicada para evitar corte em WhatsApp e compartilhamentos.
+- Banner principal humanizado com fotografia de atendimento/planejamento financeiro e cartões em apoio visual.
+- Páginas legais: Política de Privacidade, Política de Cookies e Consentimentos.
+- Rodapé em três colunas com links legais e disclaimer recolhido por padrão.
 - Otimizações de performance: preload do card principal do hero, dimensões fixas nas imagens críticas e cache HTTP para assets versionados.
 
 ## Tech Stack
@@ -72,3 +75,4 @@ Para GitHub Pages legado, o Vite ainda respeita `GITHUB_PAGES=true` para base `/
 - Benefícios e disponibilidade devem ser validados com a cooperativa/região antes de produção.
 - Ícones visíveis devem permanecer restritos aos SVGs oficiais em `public/assets/icons`.
 - Configure `APP_URL` no hPanel com o domínio público final antes do deploy de produção.
+- A foto humanizada do banner está versionada como asset local em `public/assets/hero/humanized-service.jpg`.

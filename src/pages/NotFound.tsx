@@ -6,12 +6,12 @@ export function NotFound() {
     <main className="grid min-h-screen place-items-center bg-sicredi-surface px-5 text-center">
       <div>
         <img
-          src={assetUrl('/assets/logos/sicredi-logo-full.png')}
+          src={assetUrl('/assets/logos/sicredi-logo-official.svg')}
           alt="Sicredi"
-          width="520"
-          height="376"
+          width="1819"
+          height="449"
           decoding="async"
-          className="mx-auto h-20 w-auto"
+          className="mx-auto h-14 w-auto"
         />
         <h1 className="mt-8 font-heading text-4xl font-bold italic text-sicredi-text">
           Página não encontrada

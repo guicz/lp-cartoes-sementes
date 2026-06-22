@@ -5,6 +5,9 @@ Landing page da Sicredi Sementes do Sul para orientar pessoas interessadas em ca
 ## Recursos canônicos
 
 - Página principal: https://cartoes.sicredisementesdosul.com.br/
+- Política de Privacidade: https://cartoes.sicredisementesdosul.com.br/legal/privacidade
+- Política de Cookies: https://cartoes.sicredisementesdosul.com.br/legal/cookies
+- Consentimentos: https://cartoes.sicredisementesdosul.com.br/legal/consentimentos
 - Sitemap: https://cartoes.sicredisementesdosul.com.br/sitemap.xml
 - Cartões oficiais Sicredi: https://www.sicredi.com.br/site/cartoes/cartao-para-voce/
 
