@@ -1,7 +1,7 @@
 {
   "name": "lp-cartoes-sicredi-sementes-do-sul",
   "private": true,
-  "version": "1.30.0",
+  "version": "1.31.0",
   "type": "module",
   "main": "server.js",
   "engines": {
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "node scripts/prepare-seo.mjs && vite build",
+    "build": "node scripts/prepare-seo.mjs && vite build && node scripts/finalize-static-routes.mjs",
     "start": "node server.js",
     "check": "tsc -b && eslint .",
     "preview": "vite preview --host 0.0.0.0",

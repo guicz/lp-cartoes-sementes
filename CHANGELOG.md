@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.31
+
+- **Change Type:** Fix
+- **Description:** Geração de fallbacks estáticos para `/legal/privacidade`, `/legal/cookies` e `/legal/consentimentos` no build.
+- **Rationale:** Evitar 404 em hospedagem estática quando o domínio não passa subrotas pelo fallback SPA do Express.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.30
 
 - **Change Type:** Feature
