@@ -23,6 +23,17 @@ export function Hero() {
     <section id="inicio" className="hero-section overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl px-5 pb-16 pt-8 md:px-8 md:pb-24 md:pt-14">
         <div className="hero-banner sicredi-box overflow-hidden shadow-soft">
+          <img
+            src={assetUrl('/assets/hero/humanized-service.jpg')}
+            alt=""
+            width="1920"
+            height="1080"
+            decoding="async"
+            fetchPriority="high"
+            aria-hidden="true"
+            className="hero-banner__background"
+          />
+          <div className="hero-banner__veil" aria-hidden="true" />
           <div className="hero-banner__content">
             <p className="font-heading text-sm font-bold uppercase tracking-normal text-sicredi-soft">
               Cartões de crédito
@@ -50,15 +61,15 @@ export function Hero() {
               </a>
             </div>
           </div>
-          <figure className="hero-banner__visual">
+          <figure className="hero-banner__showcase" aria-label="Cartões Sicredi Black, Platinum e Gold">
             <img
-              src={assetUrl('/assets/hero/humanized-service.jpg')}
-              alt="Pessoas conversando sobre planejamento financeiro em atendimento"
-              width="1920"
-              height="1080"
+              src={assetUrl('/assets/hero/card-art.webp')}
+              alt="Arte com cartões Sicredi Black, Platinum e Gold"
+              width="820"
+              height="1025"
               decoding="async"
               fetchPriority="high"
-              className="hero-banner__photo"
+              className="hero-banner__card-art"
             />
           </figure>
         </div>

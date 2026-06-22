@@ -64,23 +64,25 @@ select:focus-visible {
 .hero-banner {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  min-height: clamp(560px, 66vh, 700px);
+  grid-template-columns: minmax(0, 0.94fr) minmax(360px, 0.82fr);
+  gap: clamp(1rem, 3vw, 3rem);
+  min-height: clamp(620px, 72vh, 760px);
+  padding: clamp(1rem, 2vw, 1.6rem);
   isolation: isolate;
   border: 1px solid rgba(215, 230, 200, 0.78);
-  background:
-    radial-gradient(circle at 8% 12%, rgba(63, 161, 16, 0.28), transparent 28%),
-    linear-gradient(135deg, #052415 0%, #07361f 54%, #0f5a31 100%);
+  background: #052415;
 }
 
 .hero-banner::before {
   content: '';
   position: absolute;
-  inset: 1.25rem auto 1.25rem 47%;
+  inset: 8% auto 8% 54%;
   z-index: 1;
-  width: 1px;
+  width: min(28vw, 360px);
   pointer-events: none;
-  background: linear-gradient(180deg, transparent, rgba(215, 230, 200, 0.42), transparent);
+  border: 1px solid rgba(215, 230, 200, 0.24);
+  border-radius: 0 42% 42%;
+  transform: rotate(-8deg);
 }
 
 .hero-banner::after {
@@ -95,11 +97,33 @@ select:focus-visible {
   background: linear-gradient(90deg, rgba(215, 230, 200, 0.74), transparent);
 }
 
+.hero-banner__background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 48% center;
+  filter: saturate(0.95);
+}
+
+.hero-banner__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(63, 161, 16, 0.28), transparent 24%),
+    linear-gradient(90deg, rgba(5, 36, 21, 0.98) 0%, rgba(8, 70, 38, 0.9) 42%, rgba(9, 93, 47, 0.68) 100%),
+    linear-gradient(180deg, rgba(5, 36, 21, 0.22), rgba(5, 36, 21, 0.72));
+}
+
 .hero-banner__content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   align-self: center;
-  padding: clamp(2rem, 5.6vw, 5.25rem);
+  padding: clamp(1rem, 4.2vw, 4.2rem);
 }
 
 .hero-banner__proof {
@@ -113,34 +137,40 @@ select:focus-visible {
   line-height: 1.45;
 }
 
-.hero-banner__visual {
+.hero-banner__showcase {
   position: relative;
-  z-index: 2;
-  min-height: 100%;
-  margin: clamp(1rem, 2.6vw, 2.25rem);
+  z-index: 3;
+  align-self: center;
+  justify-self: end;
+  width: min(100%, 440px);
+  margin: 0;
   overflow: hidden;
-  border-radius: 0 22px 22px;
-  background: #d7e6c8;
-  box-shadow: 0 24px 70px rgba(5, 36, 21, 0.34);
+  border: 1px solid rgba(215, 230, 200, 0.3);
+  border-radius: 0 26px 26px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.05)),
+    rgba(5, 36, 21, 0.26);
+  box-shadow: 0 28px 90px rgba(5, 36, 21, 0.48);
+  backdrop-filter: blur(10px);
 }
 
-.hero-banner__visual::before {
+.hero-banner__showcase::before {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: 0.85rem;
   z-index: 1;
   pointer-events: none;
-  background:
-    linear-gradient(90deg, rgba(5, 36, 21, 0.2), transparent 35%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(5, 36, 21, 0.12));
+  border: 1px solid rgba(215, 230, 200, 0.24);
+  border-radius: 0 20px 20px;
 }
 
-.hero-banner__photo {
+.hero-banner__card-art {
+  position: relative;
+  z-index: 2;
+  display: block;
   width: 100%;
-  height: 100%;
-  min-height: clamp(430px, 52vh, 610px);
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
+  object-fit: contain;
 }
 
 .footer-disclaimer summary::marker {
@@ -692,10 +722,22 @@ select:focus-visible {
   .hero-banner {
     grid-template-columns: 1fr;
     min-height: 0;
+    gap: 0;
+    padding: 1rem;
+  }
+
+  .hero-banner__background {
+    object-position: 56% center;
+  }
+
+  .hero-banner__veil {
+    background:
+      linear-gradient(180deg, rgba(5, 36, 21, 0.96) 0%, rgba(8, 70, 38, 0.88) 54%, rgba(5, 36, 21, 0.76) 100%),
+      linear-gradient(90deg, rgba(5, 36, 21, 0.84), rgba(5, 36, 21, 0.36));
   }
 
   .hero-banner__content {
-    padding: 2rem 1.25rem;
+    padding: 1.4rem 0.25rem 1.5rem;
   }
 
   .hero-banner::before,
@@ -703,14 +745,10 @@ select:focus-visible {
     display: none;
   }
 
-  .hero-banner__visual {
-    min-height: 285px;
-    margin: 0 1rem 1rem;
-  }
-
-  .hero-banner__photo {
-    min-height: 285px;
-    object-position: 58% center;
+  .hero-banner__showcase {
+    justify-self: center;
+    width: min(100%, 310px);
+    margin-bottom: 0.25rem;
   }
 
   .portfolio-copy::before {

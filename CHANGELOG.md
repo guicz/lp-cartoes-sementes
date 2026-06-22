@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.35
+
+- **Change Type:** Fix
+- **Description:** Recriação do hero com foto humanizada como fundo translúcido e arte otimizada dos cartões destacada à direita no lugar do bloco de formulário da referência.
+- **Rationale:** Atender à direção visual solicitada, combinando contexto humano com uma peça de cartões mais forte e premium no primeiro banner.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.34
 
 - **Change Type:** Fix
