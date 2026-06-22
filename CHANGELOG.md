@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.37
+
+- **Change Type:** Fix
+- **Description:** Substituição da imagem Open Graph por uma arte quadrada mais legível em previews sociais, com cartões em destaque, logo compacta e nova URL `og-image-v137.png` para evitar cache antigo.
+- **Rationale:** Corrigir preview de WhatsApp/SEO que estava visualmente desconfigurado e com texto pequeno.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.36
 
 - **Change Type:** Fix
