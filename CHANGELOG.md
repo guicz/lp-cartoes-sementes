@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.36
+
+- **Change Type:** Fix
+- **Description:** Ajuste do hero para a foto humanizada preencher todo o banner e aparecer por trás/ao redor da arte dos cartões, com overlay verde menos opaco no lado direito.
+- **Rationale:** Melhorar a presença da foto de fundo e integrar a arte dos cartões sem parecer um bloco isolado cobrindo o hero.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.35
 
 - **Change Type:** Fix
