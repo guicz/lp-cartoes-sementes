@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.34
+
+- **Change Type:** Fix
+- **Description:** Redesenho editorial do hero com painel de texto separado da foto humanizada, sem qualquer imagem de cartões sobreposta ao banner.
+- **Rationale:** Remover definitivamente a composição visual de cartões do topo e melhorar a primeira dobra com uma solução mais limpa e criativa.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.33
 
 - **Change Type:** Fix

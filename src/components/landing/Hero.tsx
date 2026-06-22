@@ -22,18 +22,7 @@ export function Hero() {
   return (
     <section id="inicio" className="hero-section overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl px-5 pb-16 pt-8 md:px-8 md:pb-24 md:pt-14">
-        <div className="hero-banner sicredi-box relative overflow-hidden shadow-soft">
-          <img
-            src={assetUrl('/assets/hero/humanized-service.jpg')}
-            alt="Pessoas conversando sobre planejamento financeiro em atendimento"
-            width="1920"
-            height="1080"
-            decoding="async"
-            fetchPriority="high"
-            className="hero-banner__photo"
-          />
-          <div className="hero-banner__veil" />
-          <div className="hero-banner__mark" aria-hidden="true" />
+        <div className="hero-banner sicredi-box overflow-hidden shadow-soft">
           <div className="hero-banner__content">
             <p className="font-heading text-sm font-bold uppercase tracking-normal text-sicredi-soft">
               Cartões de crédito
@@ -45,6 +34,7 @@ export function Hero() {
               Mais praticidade, segurança e vantagens para comprar, pagar, viajar e aproveitar
               benefícios que combinam com o seu momento.
             </p>
+            <p className="hero-banner__proof">Cartões Black, Platinum e Gold para diferentes momentos.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#cartoes"
@@ -60,6 +50,17 @@ export function Hero() {
               </a>
             </div>
           </div>
+          <figure className="hero-banner__visual">
+            <img
+              src={assetUrl('/assets/hero/humanized-service.jpg')}
+              alt="Pessoas conversando sobre planejamento financeiro em atendimento"
+              width="1920"
+              height="1080"
+              decoding="async"
+              fetchPriority="high"
+              className="hero-banner__photo"
+            />
+          </figure>
         </div>
 
         <div className="mt-5 grid gap-3 sm:grid-cols-3">
