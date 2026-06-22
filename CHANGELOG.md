@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.38
+
+- **Change Type:** Fix
+- **Description:** Recriação da imagem Open Graph com composição centralizada e área segura para miniaturas de WhatsApp, evitando corte dos cartões.
+- **Rationale:** Corrigir o preview social que cortava a arte e prejudicava a leitura visual em thumbnails pequenos.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.37
 
 - **Change Type:** Fix
