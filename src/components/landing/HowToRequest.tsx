@@ -72,6 +72,18 @@ export function HowToRequest() {
               Encontrar atendimento
             </a>
           </div>
+          <p className="flex items-center gap-2 text-sm leading-6 text-sicredi-muted">
+            <img
+              src={assetUrl('/assets/icons/cartao-credito.svg')}
+              alt=""
+              aria-hidden="true"
+              className="h-5 w-5 shrink-0"
+            />
+            <span>
+              <strong className="font-extrabold text-sicredi-text">Ambiente oficial:</strong> você
+              será encaminhado ao site sicredi.com.br.
+            </span>
+          </p>
         </div>
       </div>
     </section>

@@ -67,6 +67,18 @@ export function Hero() {
                 Falar com o Sicredi
               </a>
             </div>
+            <p className="mt-4 flex max-w-2xl items-center gap-2 text-sm leading-6 text-white/88">
+              <img
+                src={assetUrl('/assets/icons/cartao-credito.svg')}
+                alt=""
+                aria-hidden="true"
+                className="h-5 w-5 shrink-0"
+              />
+              <span>
+                <strong className="font-extrabold text-white">Ambiente oficial:</strong> você será
+                encaminhado ao site sicredi.com.br.
+              </span>
+            </p>
           </div>
           <figure className="hero-banner__showcase" aria-label="Cartões Sicredi Black, Platinum e Gold">
             <img

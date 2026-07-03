@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.40
+
+- **Change Type:** Fix
+- **Description:** Inclusão de aviso compacto abaixo dos CTAs principais informando que o usuário será encaminhado ao site oficial `sicredi.com.br`.
+- **Rationale:** Reforçar transparência do redirecionamento para o ambiente oficial Sicredi nos pontos de conversão.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.39
 
 - **Change Type:** Feature
