@@ -176,6 +176,46 @@ select:focus-visible {
   mix-blend-mode: screen;
 }
 
+.hero-official-panel {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 3;
+  display: grid;
+  gap: 0.35rem;
+  border: 1px solid rgba(215, 230, 200, 0.34);
+  border-radius: 0 16px 16px;
+  background: rgba(5, 36, 21, 0.72);
+  padding: 0.9rem 1rem;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+.hero-official-panel span {
+  color: #d7e6c8;
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero-official-panel strong {
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.hero-official-panel a {
+  margin-top: 0.25rem;
+  width: fit-content;
+  border-radius: 0 12px 12px;
+  background: #ffffff;
+  padding: 0.5rem 0.8rem;
+  color: #146e37;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
 .footer-disclaimer summary::marker {
   color: #146e37;
   font-size: 0.9rem;
@@ -752,6 +792,14 @@ select:focus-visible {
     justify-self: center;
     width: min(100%, 310px);
     margin-bottom: 0.25rem;
+  }
+
+  .hero-official-panel {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 0 0.75rem 0.75rem;
   }
 
   .portfolio-copy::before {

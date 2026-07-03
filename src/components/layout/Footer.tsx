@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { assetUrl } from '@/lib/assets';
+import { cooperativeInfo, officialUrls } from '@/lib/official-links';
 
 type FooterLink =
   | { kind: 'internal'; label: string; to: string }
@@ -12,7 +13,7 @@ const legalLinks: FooterLink[] = [
   {
     kind: 'external',
     label: 'Telefones e atendimento',
-    href: 'https://www.sicredi.com.br/site/atendimento/',
+    href: officialUrls.attendance,
   },
 ];
 
@@ -20,17 +21,20 @@ const quickLinks = [
   {
     label: 'Atendimento',
     icon: assetUrl('/assets/icons/aplicativo.svg'),
-    href: 'https://www.sicredi.com.br/site/atendimento/',
+    href: officialUrls.attendance,
+    trigger: 'footer_quick_atendimento',
   },
   {
     label: 'Encontrar unidade',
     icon: assetUrl('/assets/icons/viagem.svg'),
-    href: 'https://www.sicredi.com.br/site/atendimento/encontre-uma-agencia/',
+    href: officialUrls.agency,
+    trigger: 'footer_quick_encontrar_unidade',
   },
   {
     label: 'Cartões',
     icon: assetUrl('/assets/icons/cartao-credito.svg'),
-    href: 'https://www.sicredi.com.br/site/cartoes/cartao-para-voce/',
+    href: officialUrls.cards,
+    trigger: 'footer_quick_cartoes',
   },
 ];
 
@@ -38,7 +42,7 @@ export function Footer() {
   return (
     <footer className="border-t border-sicredi-soft bg-white text-sicredi-text">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[1fr_0.78fr_1fr] md:px-8 md:py-16">
-        <div>
+        <div id="institucional">
           <img
             src={assetUrl('/assets/logos/sicredi-logo-official.svg')}
             alt="Sicredi"
@@ -50,11 +54,15 @@ export function Footer() {
           />
 
           <div className="mt-7 text-sm leading-7 text-sicredi-muted">
-            <p className="text-lg font-bold text-sicredi-text">Sicredi Sementes do Sul</p>
-            <p className="mt-4">Rua Santo Alves Corrêa, 43, Centro, Espumoso/RS</p>
+            <p className="text-lg font-bold text-sicredi-text">{cooperativeInfo.shortName}</p>
+            <p className="mt-3 font-bold text-sicredi-text">{cooperativeInfo.legalName}</p>
+            <p>CNPJ {cooperativeInfo.cnpj}</p>
+            <p>{cooperativeInfo.system}</p>
+            <p className="mt-4">{cooperativeInfo.address}</p>
+            <p>Telefone: {cooperativeInfo.phone}</p>
             <p>SAC Sicredi: 0800 724 7220</p>
             <p>Ouvidoria Sicredi: 0800 646 2519</p>
-            <p>Fone: (54) 3383 3850 · Nº da Cooperativa: 0218</p>
+            <p>Nº da Cooperativa: {cooperativeInfo.cooperativeNumber}</p>
           </div>
 
           <div className="mt-6 flex gap-3">
@@ -65,6 +73,7 @@ export function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={item.label}
+                data-gtm-trigger={item.trigger}
                 className="sicredi-box flex h-10 w-10 items-center justify-center bg-sicredi-soft transition hover:bg-sicredi-green"
               >
                 <img src={item.icon} alt="" aria-hidden="true" className="h-6 w-6" />
@@ -87,6 +96,7 @@ export function Footer() {
                     href={item.href}
                     target="_blank"
                     rel="noreferrer"
+                    data-gtm-trigger={`footer_link_${item.label.toLowerCase().replaceAll(' ', '_')}`}
                     className="transition hover:text-sicredi-green"
                   >
                     {item.label}
@@ -99,6 +109,11 @@ export function Footer() {
 
         <div>
           <h2 className="font-heading text-lg font-bold text-sicredi-text">Informações legais</h2>
+          <p className="mt-5 text-sm leading-7 text-sicredi-muted">
+            Esta landing page é informativa e direciona para canais oficiais Sicredi. Atendimento,
+            simulação, solicitação, análise de crédito e contratação seguem no ambiente
+            sicredi.com.br ou em canais oficiais da cooperativa.
+          </p>
           <details className="sicredi-box footer-disclaimer mt-5 border border-sicredi-soft bg-white">
             <summary className="cursor-pointer px-5 py-4 text-sm font-extrabold text-sicredi-dark">
               Ver disclaimer completo
@@ -106,13 +121,14 @@ export function Footer() {
             <div className="border-t border-sicredi-soft/70 px-5 py-4 text-xs leading-6 text-sicredi-muted">
               <p>
                 A solicitação e a concessão dos cartões estão sujeitas à análise de crédito,
-                aprovação cadastral, disponibilidade na cooperativa/região, contratação e regras das
-                bandeiras.
+                aprovação cadastral, disponibilidade na cooperativa/região, aceite das condições
+                aplicáveis, contratação nos canais oficiais e regras das bandeiras.
               </p>
               <p className="mt-2">
                 Benefícios, pontuações, limites, tarifas, anuidades, prazos e condições podem variar
-                conforme o cartão contratado e ser alterados sem aviso prévio. Consulte sua unidade
-                de atendimento Sicredi antes de contratar.
+                conforme o cartão contratado, perfil, plano, bandeira e regras vigentes, podendo ser
+                alterados sem aviso prévio. Consulte sua unidade de atendimento Sicredi e os
+                documentos oficiais antes de contratar.
               </p>
             </div>
           </details>

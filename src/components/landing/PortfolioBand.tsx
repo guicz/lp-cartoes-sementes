@@ -7,7 +7,7 @@ const portfolioCards = [
     name: 'Mastercard Black™',
     label: 'Experiências e viagens',
     points: 'Até 2,5 pontos por dólar',
-    detail: 'Salas VIP, experiências selecionadas e benefícios para viajar.',
+    detail: 'Possibilidade de salas VIP, experiências selecionadas e benefícios conforme regras.',
     tone: 'black',
   },
   {
@@ -16,7 +16,7 @@ const portfolioCards = [
     name: 'Platinum',
     label: 'Equilíbrio entre rotina e proteção',
     points: '1,5 ponto por dólar',
-    detail: 'Versatilidade para compras, planejamento e viagens.',
+    detail: 'Versatilidade para compras, planejamento e possibilidades de viagem.',
     tone: 'platinum',
   },
   {
@@ -25,7 +25,7 @@ const portfolioCards = [
     name: 'Gold',
     label: 'Compras do dia a dia',
     points: '1 ponto por dólar',
-    detail: 'Praticidade, compras protegidas e benefícios essenciais.',
+    detail: 'Praticidade e benefícios essenciais conforme condições contratadas.',
     tone: 'gold',
   },
 ];
@@ -48,8 +48,9 @@ export function PortfolioBand() {
             Benefícios para comprar, pontuar e aproveitar melhor.
           </h2>
           <p className="mt-5 max-w-xl text-lg leading-8 text-sicredi-muted">
-            Os cartões Sicredi participantes acumulam pontos que podem ser trocados por produtos,
-            viagens ou transferidos para programas parceiros, conforme regras de cada cartão.
+            Os cartões Sicredi participantes podem acumular pontos para troca por produtos,
+            viagens ou transferência para programas parceiros, conforme elegibilidade, regras do
+            programa e condições de cada cartão.
           </p>
         </div>
         <div className="portfolio-showcase" aria-label="Cartões Sicredi participantes">

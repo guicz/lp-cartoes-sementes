@@ -16,11 +16,14 @@ const structuredData = {
       '@type': 'FinancialService',
       '@id': `${canonicalUrl}#organization`,
       name: 'Sicredi Sementes do Sul',
+      legalName: 'Cooperativa de Crédito, Poupança e Investimento Sicredi Sementes do Sul RS/MG',
       alternateName: 'Cooperativa de Crédito Sicredi Sementes do Sul',
+      taxID: '87.900.411/0001-11',
       url: canonicalUrl,
       logo: `${siteUrl}/assets/logos/sicredi-logo-official.svg`,
       image: socialImageUrl,
       telephone: '+55-54-3383-3850',
+      sameAs: ['https://www.sicredi.com.br/site/cartoes/cartao-para-voce/'],
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Rua Santo Alves Corrêa, 43',
@@ -44,9 +47,9 @@ const structuredData = {
       '@type': 'WebPage',
       '@id': `${canonicalUrl}#webpage`,
       url: canonicalUrl,
-      name: 'Peça seu cartão Sicredi | Sicredi Sementes do Sul',
+      name: 'Cartões Sicredi | Sicredi Sementes do Sul',
       description:
-        'Conheça cartões Sicredi para rotina, compras, recompensas e viagens na Sicredi Sementes do Sul.',
+        'Página informativa da Sicredi Sementes do Sul sobre cartões Sicredi. Atendimento, solicitação e contratação continuam no site oficial sicredi.com.br.',
       isPartOf: {
         '@id': `${canonicalUrl}#website`,
       },

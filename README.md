@@ -1,20 +1,21 @@
 # LP Cartões Sicredi Sementes do Sul
 
-Landing page de campanha para divulgar os cartões Sicredi de pessoa física, com foco em benefícios, comparação das opções Black, Platinum e Gold e caminhos de atendimento.
+Landing page informativa da Sicredi Sementes do Sul para divulgar cartões Sicredi de pessoa física, com foco em benefícios, comparação das opções Black, Platinum e Gold e direcionamento para canais oficiais de atendimento e contratação.
 
 ## Active Features
 
-- Hero de campanha com CTA para conhecer cartões e falar com o Sicredi.
+- Hero de campanha com CTA para o site oficial Sicredi.
+- Identificação institucional da Sicredi Sementes do Sul, CNPJ e vínculo ao Sistema Sicredi.
 - Grade de benefícios: aproximação, carteira digital, cartão virtual, recompensas, prazo e viagens.
 - Comparação dos cartões Sicredi Mastercard Black™, Platinum e Gold.
 - Filtro por perfil de uso: todos, viagens, equilíbrio e rotina.
-- Seção de orientação para solicitação com links oficiais Sicredi.
+- Seção de orientação para solicitação com links oficiais Sicredi e UTM padronizada.
 - Assets oficiais locais de logo, cartões e ícones Sicredi.
 - Seção de cartões com imagens em halos suaves, sem molduras retangulares atrás dos cartões.
 - Vitrine de cartões participantes em fundo claro, com texto escuro legível e composição assimétrica Black/Platinum/Gold.
-- Rodapé centralizado com logo oficial, dados da Sicredi Sementes do Sul e disclaimer sem caixa visual.
+- Rodapé institucional com logo oficial, razão social, CNPJ, endereço, telefone, SAC, Ouvidoria, links oficiais e disclaimer legal de cartões.
 - Servidor Express para Hostinger Node.js Hosting com SPA fallback e `/api/health`.
-- SEO técnico no build: title, description, canonical, Open Graph, Twitter Card, JSON-LD, `robots.txt`, `sitemap.xml` e `llms.txt`.
+- SEO técnico no build: title, description, canonical, Open Graph com identificação da cooperativa, Twitter Card, JSON-LD, `robots.txt`, `sitemap.xml` e `llms.txt`.
 - Logo oficial Sicredi em SVG, favicon alinhado à referência de Consórcios e imagem Open Graph quadrada dedicada para evitar corte em WhatsApp e compartilhamentos.
 - Banner principal humanizado com fotografia de atendimento/planejamento financeiro e cartões em apoio visual.
 - Páginas legais: Política de Privacidade, Política de Cookies e Consentimentos.
@@ -71,8 +72,9 @@ Para GitHub Pages legado, o Vite ainda respeita `GITHUB_PAGES=true` para base `/
 
 ## Notes
 
-- Não há persistência, autenticação ou coleta de dados nesta versão.
-- Benefícios e disponibilidade devem ser validados com a cooperativa/região antes de produção.
+- Não há persistência, autenticação, formulário local, checkout ou coleta de dados nesta versão.
+- Atendimento, solicitação, análise de crédito e contratação seguem no ambiente oficial Sicredi.
+- Benefícios, pontuações, tarifas, anuidades, limites e disponibilidade devem ser validados com a cooperativa/região e documentos oficiais antes de contratação.
 - Ícones visíveis devem permanecer restritos aos SVGs oficiais em `public/assets/icons`.
 - Configure `APP_URL` no hPanel com o domínio público final antes do deploy de produção.
 - A foto humanizada do banner está versionada como asset local em `public/assets/hero/humanized-service.jpg`.

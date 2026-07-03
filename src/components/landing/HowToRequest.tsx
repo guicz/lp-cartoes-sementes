@@ -1,4 +1,5 @@
 import { assetUrl } from '@/lib/assets';
+import { officialUrls } from '@/lib/official-links';
 
 const requestSteps = [
   {
@@ -33,8 +34,8 @@ export function HowToRequest() {
             Escolha o cartão que combina com você.
           </h2>
           <p className="mt-5 text-lg leading-8 text-white/90">
-            Fale com a sua unidade Sicredi Sementes do Sul para confirmar disponibilidade,
-            condições e o próximo passo da solicitação.
+            Confira as opções e siga para o ambiente oficial Sicredi para atendimento,
+            solicitação, análise de crédito e contratação, conforme disponibilidade e condições.
           </p>
         </div>
         <div className="grid content-center gap-4">
@@ -53,17 +54,19 @@ export function HowToRequest() {
           ))}
           <div className="mt-3 flex flex-col gap-3 sm:flex-row">
             <a
-              href="https://www.sicredi.com.br/site/cartoes/cartao-para-voce/"
+              href={officialUrls.cards}
               target="_blank"
               rel="noreferrer"
+              data-gtm-trigger="como_pedir_cta_site_oficial_cartoes"
               className="sicredi-box inline-flex min-h-12 items-center justify-center bg-sicredi-green px-6 py-3 font-extrabold text-white transition hover:bg-sicredi-dark"
             >
-              Abrir página oficial
+              Ir para o site oficial
             </a>
             <a
-              href="https://www.sicredi.com.br/site/atendimento/encontre-uma-agencia/"
+              href={officialUrls.agency}
               target="_blank"
               rel="noreferrer"
+              data-gtm-trigger="como_pedir_cta_encontrar_atendimento"
               className="sicredi-box inline-flex min-h-12 items-center justify-center border border-sicredi-green bg-white px-6 py-3 font-extrabold text-sicredi-dark transition hover:bg-sicredi-soft"
             >
               Encontrar atendimento

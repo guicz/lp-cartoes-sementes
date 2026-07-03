@@ -1,4 +1,5 @@
 import { assetUrl } from '@/lib/assets';
+import { officialUrls } from '@/lib/official-links';
 
 const heroBenefits = [
   {
@@ -48,13 +49,19 @@ export function Hero() {
             <p className="hero-banner__proof">Cartões Black, Platinum e Gold para diferentes momentos.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href="#cartoes"
+                href={officialUrls.cards}
+                target="_blank"
+                rel="noreferrer"
+                data-gtm-trigger="hero_cta_site_oficial_cartoes"
                 className="sicredi-box inline-flex min-h-12 items-center justify-center bg-white px-6 py-3 font-extrabold text-sicredi-dark transition hover:bg-sicredi-soft"
               >
-                Conhecer cartões
+                Ir para o site oficial
               </a>
               <a
-                href="#como-pedir"
+                href={officialUrls.agency}
+                target="_blank"
+                rel="noreferrer"
+                data-gtm-trigger="hero_cta_encontrar_atendimento"
                 className="sicredi-box inline-flex min-h-12 items-center justify-center border border-white/72 bg-white/10 px-6 py-3 font-extrabold text-white backdrop-blur-md transition hover:bg-white/18"
               >
                 Falar com o Sicredi
@@ -71,6 +78,18 @@ export function Hero() {
               fetchPriority="high"
               className="hero-banner__card-art"
             />
+            <figcaption className="hero-official-panel">
+              <span>Ambiente oficial</span>
+              <strong>Continue em sicredi.com.br</strong>
+              <a
+                href={officialUrls.cards}
+                target="_blank"
+                rel="noreferrer"
+                data-gtm-trigger="hero_panel_site_oficial_cartoes"
+              >
+                Ir para o site oficial
+              </a>
+            </figcaption>
           </figure>
         </div>
 

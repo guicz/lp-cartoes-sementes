@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.39
+
+- **Change Type:** Feature
+- **Description:** Adaptação institucional da LP de cartões com metadados e Open Graph identificando a Sicredi Sementes do Sul, CNPJ, vínculo com o Sistema Sicredi, CTAs para o site oficial, UTMs padronizadas para `prod-cartoes`, revisão legal da copy e atualização do rodapé/LLMs.
+- **Rationale:** Alinhar a LP ao padrão de conformidade aplicado nas demais campanhas Sicredi, deixando claro que atendimento, solicitação, análise e contratação continuam nos canais oficiais.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.38
 
 - **Change Type:** Fix

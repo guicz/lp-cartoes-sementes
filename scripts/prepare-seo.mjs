@@ -7,6 +7,8 @@ const siteUrl = new URL(rawUrl).toString().replace(/\/$/, '');
 const publicDir = path.resolve('public');
 const lastmod = new Date().toISOString().slice(0, 10);
 const sitemapUrls = ['/', '/legal/privacidade', '/legal/cookies', '/legal/consentimentos'];
+const officialCardsUrl =
+  'https://www.sicredi.com.br/site/cartoes/cartao-para-voce/?utm_source=google&utm_medium=lp&utm_campaign=0218_comunica%C3%A7%C3%A3o-e-marketing-coop_prod-cartoes_dg5_google_lp_conversao&utm_content=conversao&utm_term=cartoes';
 
 fs.mkdirSync(publicDir, { recursive: true });
 
@@ -41,20 +43,20 @@ fs.writeFileSync(
 fs.writeFileSync(
   path.join(publicDir, 'llms.txt'),
   `# LP Cartões Sicredi Sementes do Sul\n\n` +
-    `Landing page da Sicredi Sementes do Sul para orientar pessoas interessadas em cartões de crédito Sicredi Black, Platinum e Gold.\n\n` +
+    `Página informativa da Sicredi Sementes do Sul, CNPJ 87.900.411/0001-11, instituição integrante do Sistema Sicredi, para orientar pessoas interessadas em cartões de crédito Sicredi Black, Platinum e Gold.\n\n` +
     `## Recursos canônicos\n\n` +
     `- Página principal: ${siteUrl}/\n` +
     `- Política de Privacidade: ${siteUrl}/legal/privacidade\n` +
     `- Política de Cookies: ${siteUrl}/legal/cookies\n` +
     `- Consentimentos: ${siteUrl}/legal/consentimentos\n` +
     `- Sitemap: ${siteUrl}/sitemap.xml\n` +
-    `- Cartões oficiais Sicredi: https://www.sicredi.com.br/site/cartoes/cartao-para-voce/\n\n` +
+    `- Cartões oficiais Sicredi: ${officialCardsUrl}\n\n` +
     `## Conteúdo principal\n\n` +
     `- Benefícios: pagamento por aproximação, carteira digital, cartão virtual, recompensas, mais prazo para pagar e benefícios para viagens.\n` +
     `- Cartões destacados: Sicredi Mastercard Black, Sicredi Platinum e Sicredi Gold.\n` +
-    `- Atendimento: a contratação depende de análise de crédito, disponibilidade regional e regras da cooperativa.\n\n` +
+    `- Atendimento: solicitação, análise de crédito, contratação, limites, tarifas, anuidades e condições dependem dos canais oficiais Sicredi, disponibilidade regional, aprovação cadastral e regras vigentes.\n\n` +
     `## Observações para agentes\n\n` +
-    `Não há coleta de dados, login, checkout ou formulário transacional nesta versão. Use os links oficiais da página para atendimento e confirmação de disponibilidade.\n`,
+    `Não há coleta local de dados, login, checkout, formulário transacional ou contratação direta nesta landing page. Ações sensíveis, simulações, atendimento e contratação continuam em sicredi.com.br ou em canais oficiais da cooperativa.\n`,
 );
 
 console.log(`SEO files generated for ${siteUrl}`);
