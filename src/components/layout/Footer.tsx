@@ -21,19 +21,19 @@ const quickLinks = [
   {
     label: 'Atendimento',
     icon: assetUrl('/assets/icons/aplicativo.svg'),
-    href: officialUrls.attendance,
+    href: officialUrls.associate,
     trigger: 'footer_quick_atendimento',
   },
   {
     label: 'Encontrar unidade',
     icon: assetUrl('/assets/icons/viagem.svg'),
-    href: officialUrls.agency,
+    href: officialUrls.associate,
     trigger: 'footer_quick_encontrar_unidade',
   },
   {
     label: 'Cartões',
     icon: assetUrl('/assets/icons/cartao-credito.svg'),
-    href: officialUrls.cards,
+    href: officialUrls.associate,
     trigger: 'footer_quick_cartoes',
   },
 ];

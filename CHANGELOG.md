@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.41
+
+- **Change Type:** Fix
+- **Description:** Remoção de todos os parâmetros UTM dos links externos, direcionamento dos botões para a URL oficial limpa do Sicredi “Seja associado” e correção da compatibilidade da toolchain entre TypeScript, ESLint, Tailwind CSS e PostCSS.
+- **Rationale:** Manter um único destino oficial nos CTAs e restaurar uma instalação e um build reproduzíveis para o deploy da Hostinger.
+- **Tech Debt:** Nenhum débito novo identificado.
+
 ## v1.40
 
 - **Change Type:** Fix

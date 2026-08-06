@@ -7,8 +7,7 @@ const siteUrl = new URL(rawUrl).toString().replace(/\/$/, '');
 const publicDir = path.resolve('public');
 const lastmod = new Date().toISOString().slice(0, 10);
 const sitemapUrls = ['/', '/legal/privacidade', '/legal/cookies', '/legal/consentimentos'];
-const officialCardsUrl =
-  'https://www.sicredi.com.br/site/cartoes/cartao-para-voce/?utm_source=google&utm_medium=lp&utm_campaign=0218_comunica%C3%A7%C3%A3o-e-marketing-coop_prod-cartoes_dg5_google_lp_conversao&utm_content=conversao&utm_term=cartoes';
+const officialAssociateUrl = 'https://www.sicredi.com.br/site/seja-associado/';
 
 fs.mkdirSync(publicDir, { recursive: true });
 
@@ -50,7 +49,7 @@ fs.writeFileSync(
     `- Política de Cookies: ${siteUrl}/legal/cookies\n` +
     `- Consentimentos: ${siteUrl}/legal/consentimentos\n` +
     `- Sitemap: ${siteUrl}/sitemap.xml\n` +
-    `- Cartões oficiais Sicredi: ${officialCardsUrl}\n\n` +
+    `- Seja associado Sicredi: ${officialAssociateUrl}\n\n` +
     `## Conteúdo principal\n\n` +
     `- Benefícios: pagamento por aproximação, carteira digital, cartão virtual, recompensas, mais prazo para pagar e benefícios para viagens.\n` +
     `- Cartões destacados: Sicredi Mastercard Black, Sicredi Platinum e Sicredi Gold.\n` +

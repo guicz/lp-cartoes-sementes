@@ -54,7 +54,7 @@ export function HowToRequest() {
           ))}
           <div className="mt-3 flex flex-col gap-3 sm:flex-row">
             <a
-              href={officialUrls.cards}
+              href={officialUrls.associate}
               target="_blank"
               rel="noreferrer"
               data-gtm-trigger="como_pedir_cta_site_oficial_cartoes"
@@ -63,7 +63,7 @@ export function HowToRequest() {
               Ir para o site oficial
             </a>
             <a
-              href={officialUrls.agency}
+              href={officialUrls.associate}
               target="_blank"
               rel="noreferrer"
               data-gtm-trigger="como_pedir_cta_encontrar_atendimento"

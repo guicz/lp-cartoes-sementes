@@ -42,7 +42,7 @@ export function Header() {
           ))}
         </nav>
         <a
-          href={officialUrls.cards}
+          href={officialUrls.associate}
           target="_blank"
           rel="noreferrer"
           data-gtm-trigger="header_cta_site_oficial_cartoes"

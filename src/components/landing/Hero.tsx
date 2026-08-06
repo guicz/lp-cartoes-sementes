@@ -49,7 +49,7 @@ export function Hero() {
             <p className="hero-banner__proof">Cartões Black, Platinum e Gold para diferentes momentos.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href={officialUrls.cards}
+                href={officialUrls.associate}
                 target="_blank"
                 rel="noreferrer"
                 data-gtm-trigger="hero_cta_site_oficial_cartoes"
@@ -58,7 +58,7 @@ export function Hero() {
                 Ir para o site oficial
               </a>
               <a
-                href={officialUrls.agency}
+                href={officialUrls.associate}
                 target="_blank"
                 rel="noreferrer"
                 data-gtm-trigger="hero_cta_encontrar_atendimento"
@@ -94,7 +94,7 @@ export function Hero() {
               <span>Ambiente oficial</span>
               <strong>Continue em sicredi.com.br</strong>
               <a
-                href={officialUrls.cards}
+                href={officialUrls.associate}
                 target="_blank"
                 rel="noreferrer"
                 data-gtm-trigger="hero_panel_site_oficial_cartoes"
